@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [tanya](https://up.htmlacademy.ru/adaptive/20/user/974703).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Шугаев](https://htmlacademy.ru/profile/humizi).
 
 ---
 
