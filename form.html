@@ -8,27 +8,25 @@
 
 <body class="page">
   <header class="page__header page-header">
-    <a class="page-header__logo logo">
-      <img src="img/mishka-logo.svg" width="86" height="35" alt="Логотип Мишка">
-    </a>
-    <nav class="page-header__navigation navigation">
-      <button class="button navigation__button" type="button"><span class="visually-hidden">Открыть
+    <img class="page-header__logo logo" src="img/mishka-logo.svg" width="86" height="35" alt="Логотип Мишка">
+    <nav class="page-header__nav navigation">
+      <button class="button button--burger navigation__button" type="button"><span class="visually-hidden">Открыть
           меню</span></button>
-      <ul class="navigation__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link"> Главная</a>
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--active">
+          <a class="navigation__link">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Каталог товаров</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="photo.html">Каталог товаров</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="site-list__item site-list__item--basket">
-          <a class="site-list__link js-login" href="login.html">Поиск по сайту</a>
+        <li class="navigation__item navigation__item--basket">
+          <a class="navigation__link js-login" href="login.html">Поиск по сайту</a>
         </li>
-        <li class="site-list__item site-list__item--find">
-          <a class="site-list__link js-basket" href="login.html">Корзина: пока пуста</a>
+        <li class="navigation__item navigation__item--find">
+          <a class="navigation__link js-basket" href="login.html">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -43,6 +41,7 @@
       <form class="filter" method="get" action="#">
         <p class="filter__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
+
         <fiedset class="filter__type">
           <legend class="filter__legend">Тип:</legend>
           <ul class="filter__list">
@@ -54,6 +53,7 @@
                 name="product-group" checked id="filter-children-toy" value="toy-for-children"><label
                 for="filter-children-toy">Детская игрушка</label></li>
         </fiedset>
+
         <fiedset class="filter__colour">
           <legend class="filter__legend">Цвет:</legend>
           <ul class="filter__list">
@@ -73,47 +73,55 @@
             </li>
           </ul>
         </fiedset>
+
         <fiedset class="filter__name">
           <legend class="filter__legend">ФИО</legend>
           <ul class="form-name">
-            <li class="form-name-item">
-              <p>
+            <p>
+              <li class="form-name-item">
                 <label class="form-given-name" for="given-name">Имя</label>
                 <input class="given-name-input" id="given-name" type="text" name="givenname"
                   placeholder="Введите ваше имя*">
-              </p>
-            </li>
-            <li class="form-name-item">
-              <p>
+              </li>
+            </p>
+            <p>
+              <li class="form-name-item">
                 <label class="form-surename" for="surename">Имя</label>
                 <input class="surename-name-input" id="surename" type="text" name="surename"
                   placeholder="Укажите фамилию*">
-              </p>
-            </li>
-            <li class="form-name-item">
-              <p>
+              </li>
+            </p>
+            <p>
+              <li class="form-name-item">
                 <label class="form-patronic-name" for="patronic-name">Имя</label>
                 <input class="patronic-name-input" id="patronic-name" type="text" name="patronic-name"
                   placeholder="Отчество, если желаете">
-              </p>
-            </li>
+              </li>
+            </p>
           </ul>
         </fiedset>
+
         <fiedset class="filter__phone">
           <legend class="filter__legend">Тел</legend>
           <label class="visually-hidden" for="phone">Номер телефона</label>
-          <input class="login-icon-user" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="login-icon-user" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fiedset>
+
         <fiedset class="filter__email">
           <legend class="filter__legend">Email</legend>
-          <label class="visually-hidden" for="phone">Номер телефона</label>
-          <input class="login-icon-user" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <label class="visually-hidden" for="email">Email</label>
+          <input class="user-email" type="email" name="email" placeholder="email@example.com" required>
         </fiedset>
-        <fiedset class="filter__add">
+
+        <fiedset class="filter__additional">
           <legend class="filter__legend">Доп</legend>
+          <label class="visually-hidden">Комментарий</label>
+          <textarea class="user-message" name="message" placeholder="Опишите все ваши пожелания к заказу"
+            required></textarea>
         </fiedset>
+
         <small>*Поля обязательны для заполнения</small>
-        <button type="submit" class="filter__button button">Показать</button>
+        <button type="submit" class="button filter__button">Показать</button>
       </form>
     </section>
   </main>
