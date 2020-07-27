@@ -1,4 +1,8 @@
-
+/*!
+  * ===========================================================
+  * INDEX
+  * ===========================================================
+  */
 .page {
   width: 320px;
   margin: 0 auto;
@@ -7,8 +11,22 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: @black;
   background-color: rgba(122,251,122,0.2);
+}
+
+.button {
+  color: @drey;
+  background-color: @white;
+  border: 2px solid @drey;
+  text-transform: uppercase;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  outline: none;
+  cursor: pointer;
 }
 
 .visually-hidden,
@@ -25,12 +43,16 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
+/*!
+  * ===========================================================
+  * HEADER SECTION
+  * ===========================================================
+  */
 .page-header {
   margin: 0;
   padding: 0;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: @black;
+  background-color: @white;
 }
 
 .page__header {
@@ -39,7 +61,7 @@ input[type="radio"].visually-hidden {
 
 .logo {
   margin: 22px 118px 22px 116px;
-  background-color: #FFFFFF;
+  background-color: @white;
   display: inline-block;
 }
 
@@ -47,22 +69,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   line-height: 24px;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #F1F1F1;
-}
-
-.button {
-  color: #444444;
-  background-color: #FFFFFF;
-  border: 2px solid #444444;
-  text-transform: uppercase;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  outline: none;
-  cursor: pointer;
+  background-color: @white;
+  border-bottom: 1px solid @light-grey;
 }
 
 .navigation__button {
@@ -98,7 +106,7 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation__item {
-  border-top: 1px solid #F1F1F1;
+  border-top: 1px solid @light-grey;
   padding-top: 27px;
   padding-bottom: 27px;
 }
@@ -107,7 +115,7 @@ input[type="radio"].visually-hidden {
   padding-left: 76px;
   line-height: 24px;
   text-decoration: none;
-  color: #000000;
+  color: @black;
   &:hover{
     opacity: 0.6;
   }
@@ -157,12 +165,16 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/icon-cart-active.svg");
   }
 }
-
+/*!
+  * ===========================================================
+  * MAIN SECTION
+  * ===========================================================
+  */
 .page-main {
   margin: 0;
   padding: 0;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: @black;
+  background-color: @white;
 }
 
 .intro {
@@ -171,17 +183,17 @@ input[type="radio"].visually-hidden {
   min-height: 177px;
   font-size: 19px;
   line-height: 24px;
-  color: #000000;
+  color: @black;
    &--index {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: -127px -15px;
   }
   &--catalog {
-    background-color: #F1F1F1;
+    background-color: @light-grey;
   }
   &--form {
-    background-color: #F1F1F1;
+    background-color: @light-grey;
   }
 }
 
@@ -198,7 +210,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #F1F1F1;
+  background-color: @light-grey;
 }
 
 .intro__item {
@@ -211,10 +223,10 @@ input[type="radio"].visually-hidden {
     height: 108px;
   }
   &--lighter {
-    background-color: #63D1BB;
+    background-color: @light-green;
   }
   &--darker {
-    background-color: #56C3B2;
+    background-color: @dark-green;
   }
 }
 
@@ -267,26 +279,31 @@ input[type="radio"].visually-hidden {
 .intro__link {
   width: 130px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: @white;
   font-size: 19px;
   line-height: 24px;
   display: inline-block;
 }
 
+/*!
+  * ===========================================================
+  * GOODS SECTION
+  * ===========================================================
+  */
 .goods {
   margin: 0;
   padding: 31px 30px 36px 30px;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #444444;
-  background-color: #FFFFFF;
+  color: @drey;
+  background-color: @white;
 }
 
 .goods__title {
   margin: 0;
   padding: 0;
-  color: #000000;
+  color: @black;
   font-size: 25px;
   line-height: 30px;
 }
@@ -298,7 +315,7 @@ input[type="radio"].visually-hidden {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  color: #63D1BB;
+  color: @light-green;
   text-transform: uppercase;
 }
 
@@ -306,7 +323,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 18px;
-  color: #444444;
+  color: @drey;
   font-size: 15px;
   line-height: 24px;
 }
@@ -354,7 +371,7 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  color: #444444;
+  color: @drey;
 }
 
 .goods__button {
@@ -362,7 +379,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding: 16px 85px;
   &:hover {
-    color: #FFFFFF;
+    color: @white;
     background: linear-gradient(0deg, #444444, #444444);
   }
   &:active {
@@ -371,11 +388,16 @@ input[type="radio"].visually-hidden {
   }
 }
 
+/*!
+  * ===========================================================
+  * ABOUT SECTION
+  * ===========================================================
+  */
 .about-company {
   margin: 0;
   padding: 31px 30px 58px 30px;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: @black;
+  background-color: @white;
   position: relative;
   &::before {
     content: "";
@@ -483,14 +505,19 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+/*!
+  * ===========================================================
+  * REVIEWS SECTION
+  * ===========================================================
+  */
 .reviews {
   margin: 0;
   padding: 0;
   padding:  0 30px 45px 30px;
   padding-left: 30px;
   padding-right: 30px;
-  color: #444444;
-  background-color: #FFFFFF;
+  color: @drey;
+  background-color: @white;
 }
 
 .slider{
@@ -504,7 +531,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 14px;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @black;
 }
 
 .reviews__list {
@@ -536,7 +563,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @black;
 }
 
 .reviews__nickname {
@@ -560,7 +587,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 130px;
   height: 52px;
-  border: 1px solid #ECECEC;
+  border: 1px solid @border-color;
   position: relative;
   &::before {
     content: "";
@@ -581,13 +608,12 @@ input[type="radio"].visually-hidden {
   }
 }
 
-
 .reviews-list__next {
   margin: 0;
   padding: 0;
   width: 130px;
   height: 52px;
-  border: 1px solid #ECECEC;
+  border: 1px solid @border-color;
   position: relative;
   &:hover{
     opacity: 0.6;
@@ -618,13 +644,13 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 20px;
   background-color: red;
-  border: 2px solid #444444;
+  border: 2px solid @drey;
   box-sizing: border-box;
-  background: #FFFFFF;
+  background: @white;
   text-decoration: none;
   text-transform: uppercase;
   &:hover{
-    color: #FFFFFF;
+    color: @white;
     background: linear-gradient(0deg, #444444, #444444);
   }
   &:active {
@@ -633,6 +659,11 @@ input[type="radio"].visually-hidden {
   }
 }
 
+/*!
+  * ===========================================================
+  * CONTACTS SECTION
+  * ===========================================================
+  */
 .page-main__contacts {
   position: relative;
   &::before {
@@ -654,11 +685,11 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding: 38px 0 9px 0;
-  color: #444444;
+  color: @drey;
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  background-color: #FFFFFF;
+  background-color: @white;
   position: relative;
   box-sizing: border-box;
 }
@@ -671,7 +702,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: #000000;
+  color: @black;
 }
 
 .contacts__body {
@@ -702,12 +733,12 @@ input[type="radio"].visually-hidden {
 
 .contacts__email{
   cursor: pointer;
-  border-bottom: 1px solid #46C1AE;
+  border-bottom: 1px solid @green-link;
   &:hover{
-    color: #46C1AE;
+    color: @green-link;
   }
   &:active {
-    color: #46C1AE;
+    color: @green-link;
     border-bottom: 0;
   }
 }
@@ -728,13 +759,18 @@ input[type="radio"].visually-hidden {
   padding: 16px 37px;
 }
 
+/*!
+  * ===========================================================
+  * FOOTER SECTION
+  * ===========================================================
+  */
 .page-footer {
   margin: 0;
   padding: 0;
   font-size: 19px;
   line-height: 18px;
-  color: #000000;
-  background: #F1F1F1;
+  color: @black;
+  background: @light-grey;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -770,10 +806,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   &:hover path{
-    fill: #46C1AE;
+    fill: @green-link;
   }
   &:active path{
-    fill: #46C1AE;
+    fill: @green-link;
     opacity: 0.3;
   }
 }
@@ -801,12 +837,18 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding-left: 27px;
   &:hover path{
-    fill: #46C1AE;
+    fill: @green-link;
   }
   &:active path{
     opacity: 0.3;
   }
 }
+
+/*!
+  * ===========================================================
+  * CATALOG
+  * ===========================================================
+  */
 
 .intro--catalog {
   height: 177px;
@@ -820,6 +862,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+/*!
+  * ===========================================================
+  * PRODECTS SECTION
+  * ===========================================================
+  */
+
 .products {
   margin: 0;
   padding: 0 30px 30px 30px;
@@ -829,7 +877,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #000000;
+  color: @black;
 }
 
 .products__item {
@@ -841,7 +889,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @black;
   text-decoration: none;
   display: inline-block;
 }
@@ -854,7 +902,7 @@ input[type="radio"].visually-hidden {
 .products__wrapper {
   margin: 0;
   padding: 23px 28px 28px 28px;
-  border: 1px solid #ECECEC;
+  border: 1px solid @border-color;
 }
 
 .products__name {
@@ -868,7 +916,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   font-size: 13px;
   line-height: 30px;
-  color: #444444;
+  color: @drey;
 }
 
 .products__price {
@@ -877,8 +925,8 @@ input[type="radio"].visually-hidden {
   padding-top: 22px;
   font-size: 15px;
   line-height: 24px;
-  color: #000000;
-  border-top: 1px solid #ECECEC;
+  color: @black;
+  border-top: 1px solid @border-color;
   position: relative;
   &::before{
     content: "";
@@ -899,6 +947,11 @@ input[type="radio"].visually-hidden {
   }
 }
 
+/*!
+  * ===========================================================
+  * VIDEO SECTION
+  * ===========================================================
+  */
 .page-main__video {
   margin: 0 30px;
   padding-bottom: 58px;
@@ -907,7 +960,7 @@ input[type="radio"].visually-hidden {
 
 .video {
   padding: 22px 0 33px 0;
-  border: 1px solid #ECECEC;
+  border: 1px solid @border-color;
   box-sizing: border-box;
 }
 
@@ -920,7 +973,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @black;
   position: relative;
   &::before{
     content: "";
@@ -960,7 +1013,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: @drey;
 }
 
 .video__button {
@@ -968,6 +1021,11 @@ input[type="radio"].visually-hidden {
   padding: 18px 11px;
 }
 
+/*!
+  * ===========================================================
+  * FORM
+  * ===========================================================
+  */
 .intro--form {
   height: 177px;
   display: flex;
@@ -979,6 +1037,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
+/*!
+  * ===========================================================
+  * FOLTERS SECTION
+  * ===========================================================
+  */
 
 .page-main__filters {
   margin: 0;
@@ -998,7 +1062,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: @drey;
 }
 
 .filters__title {
@@ -1006,8 +1070,20 @@ input[type="radio"].visually-hidden {
   padding: 0;
   font-size: 17px;
   line-height: 16px;
-  color: #63D1BB;
+  color: @light-green;
   text-transform: uppercase;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 192;
+    height: 1;
+    background-image: url("../img/form-line.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+  }
 }
 
 .filters__list {
@@ -1021,12 +1097,70 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-left: 42px;
-  padding-bottom: 23px;
+  padding-bottom: 43px;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: @black;
 }
+
+.filters__label{
+  position: relative;
+}
+
+.filters__input {
+	display: block;
+	cursor: pointer;
+  user-select: none;
+  &--radio::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid @drey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--radio:checked::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/dot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid @drey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/dot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
 
 

@@ -1,0 +1,77 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  padding: 38px 0 9px 0;
+  color: @drey;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: @white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: @black;
+}
+
+.contacts__body {
+  margin: 0;
+  padding: 0;
+  padding: 0 30px 27px 30px;
+  box-sizing: border-box;
+}
+
+.contacts__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 27px 0 0 0;
+}
+
+.contacts__first-column {
+  margin: 0;
+  padding: 0;
+  width: 76px;
+}
+
+.contacts__second-column {
+  margin: 0;
+  padding: 0;
+  width: 183px;
+}
+
+.contacts__email{
+  cursor: pointer;
+  border-bottom: 1px solid @green-link;
+  &:hover{
+    color: @green-link;
+  }
+  &:active {
+    color: @green-link;
+    border-bottom: 0;
+  }
+}
+
+.contacts__map {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
+  width: 322px;
+  height: 457px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.contacts__button {
+  width: 100%;
+  padding: 16px 37px;
+}

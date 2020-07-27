@@ -1,0 +1,112 @@
+.filters {
+  margin: 0;
+  padding: 0;
+}
+
+.filters__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 29px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: @drey;
+}
+
+.filters__title {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 16px;
+  color: @light-green;
+  text-transform: uppercase;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 192;
+    height: 1;
+    background-image: url("../img/form-line.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+  }
+}
+
+.filters__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  list-style: none;
+}
+
+.filters__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 42px;
+  padding-bottom: 43px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: @black;
+}
+
+.filters__label{
+  position: relative;
+}
+
+.filters__input {
+	display: block;
+	cursor: pointer;
+  user-select: none;
+  &--radio::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid @drey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--radio:checked::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/dot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid @drey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/dot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
