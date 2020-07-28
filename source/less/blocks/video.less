@@ -2,61 +2,62 @@
   padding: 22px 0 33px 0;
   border: 1px solid @border-color;
   box-sizing: border-box;
-}
 
-.video__title {
-  margin: 0;
-  padding: 0;
-  padding-left: 91px;
-  padding-bottom: 27px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: @black;
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 34px;
-    width: 32px;
-    height: 22px;
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  &__title {
+    margin: 0;
+    padding: 0;
+    padding-left: 91px;
+    padding-bottom: 27px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: @black;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 34px;
+      width: 32px;
+      height: 22px;
+      background-image: url("../img/icon-video.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &__img {
+    width: 260px;
+    height: 160px;
+    position: relative;
+    z-index: 1;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100.6px;
+      height: 76.8px;
+      background-image: url("../img/icon-play.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 2;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding: 35px 0 41px 34px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: @grey;
+  }
+
+  &__button {
+    margin: 0 45px;
+    padding: 18px 11px;
   }
 }
 
-.video__img {
-  width: 260px;
-  height: 160px;
-  position: relative;
-  z-index: 1;
-  &::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100.6px;
-    height: 76.8px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    z-index: 2;
-  }
-}
-
-.video__description {
-  margin: 0;
-  padding: 35px 0 41px 34px;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  color: @drey;
-}
-
-.video__button {
-  margin: 0 45px;
-  padding: 18px 11px;
-}

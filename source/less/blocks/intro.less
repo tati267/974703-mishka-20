@@ -16,118 +16,119 @@
   &--form {
     background-color: @light-grey;
   }
-}
 
-.intro__title {
-  width: 260px;
-  margin: 0;
-  padding: 73px 30px 120px 30px;
-  text-align: center;
-  font-size: 27px;
-  line-height: 30px;
-}
+  &__title {
+    width: 260px;
+    margin: 0;
+    padding: 73px 30px 120px 30px;
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+  }
 
-.intro__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: @light-grey;
-}
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: @light-grey;
+  }
 
-.intro__item {
-  margin: 0;
-  height: 103px;
-  box-sizing: border-box;
-  &:hover {
-    height: 108px;
+  &__item {
+    margin: 0;
+    height: 103px;
+    box-sizing: border-box;
+    &:hover {
+      height: 108px;
+    }
+    &--lighter {
+      background-color: @light-green;
+    }
+    &--darker {
+      background-color: @dark-green;
+    }
   }
-  &--lighter {
-    background-color: @light-green;
-  }
-  &--darker {
-    background-color: @dark-green;
-  }
-}
 
-.intro__item--lighter{
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 36px;
-    width: 40.219px;
-    height: 62.411px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  &__item--lighter{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 36px;
+      width: 40.219px;
+      height: 62.411px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &:hover::before {
+      top: 18px;
+      background-image: url("../img/icon-interior-hover.svg");
+    }
+    &:active::before{
+      top: 18px;
+      background-image: url("../img/icon-interior-active.svg");
+    }
   }
-  &:hover::before {
-    top: 18px;
-    background-image: url("../img/icon-interior-hover.svg");
-  }
-  &:active::before{
-    top: 18px;
-    background-image: url("../img/icon-interior-active.svg");
-  }
-}
 
-.intro__item--darker{
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    top: 21px;
-    right: 27px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  &__item--darker{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &:hover::before {
+      top: 16px;
+      background-image: url("../img/icon-toy-hover.svg");
+    }
+    &:active::before{
+      top: 16px;
+      background-image: url("../img/icon-toy-active.svg");
+    }
   }
-  &:hover::before {
-    top: 16px;
-    background-image: url("../img/icon-toy-hover.svg");
+
+  &__link {
+    width: 130px;
+    padding: 24px 160px 31px 30px;
+    text-decoration: none;
+    color: @white;
+    font-size: 19px;
+    line-height: 24px;
+    display: inline-block;
+    &:hover {
+      padding: 19px 160px 31px 30px;
+    }
   }
-  &:active::before{
-    top: 16px;
-    background-image: url("../img/icon-toy-active.svg");
+
+  &--catalog {
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-.intro__link {
-  width: 130px;
-  padding: 24px 160px 31px 30px;
-  text-decoration: none;
-  color: @white;
-  font-size: 19px;
-  line-height: 24px;
-  display: inline-block;
-  &:hover {
-    padding: 19px 160px 31px 30px;
+  &--catalog &__title {
+    margin: 0;
+    padding: 0;
   }
-}
 
-.intro--catalog {
-  height: 177px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &--form {
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.intro--catalog .intro__title {
-  margin: 0;
-  padding: 0;
-}
+  &--form &__title {
+    margin: 0;
+    padding: 0;
+  }
 
-.intro--form {
-  height: 177px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro--form .intro__title {
-  margin: 0;
-  padding: 0;
 }
