@@ -4,7 +4,7 @@
   padding:  0 30px 45px 30px;
   padding-left: 30px;
   padding-right: 30px;
-  color: @grey;
+  color: @grey-dark;
   background-color: @white;
 
   &__title {
@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     width: 260px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
   }
 
   &__text {
@@ -34,7 +34,7 @@
     font-size: 15px;
     line-height: 30px;
     font-weight: normal;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
   }
 
   &__author {
@@ -51,6 +51,8 @@
   &__nickname {
     margin: 0;
     padding: 0;
+    display: inline-block;
+    padding-top: 6px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -61,7 +63,7 @@
   &__buttons {
     display: flex;
     flex-direction: row;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
   }
 
   &__prev {
@@ -69,13 +71,13 @@
     padding: 0;
     width: 130px;
     height: 52px;
-    border: 1px solid @border-color;
+    border: 1px solid @grey-regular;
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      top: 13px;
-      left: 35px;
+      top: 12px;
+      left: 37px;
       width: 50px;
       height: 26px;
       background-image: url("../img/icon-left-arrow.svg");
@@ -95,7 +97,7 @@
     padding: 0;
     width: 130px;
     height: 52px;
-    border: 1px solid @border-color;
+    border: 1px solid @grey-regular;
     position: relative;
     &:hover{
       opacity: 0.6;
@@ -106,8 +108,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 13px;
-      left: 35px;
+      top: 12px;
+      left: 37px;
       width: 50px;
       height: 26px;
       background-image: url("../img/icon-right-arrow.svg");
@@ -118,7 +120,7 @@
 
   &__link {
     width: 100%;
-    padding: 16px 0;
+    padding: 15px 0;
     text-align: center;
     display: inline-block;
     font-style: normal;
@@ -126,7 +128,7 @@
     font-size: 18px;
     line-height: 20px;
     background-color: red;
-    border: 2px solid @grey;
+    border: 2px solid @grey-light;
     box-sizing: border-box;
     background: @white;
     text-decoration: none;

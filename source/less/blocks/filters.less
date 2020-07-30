@@ -10,7 +10,7 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    color: @grey;
+    color: @grey-dark;
   }
 
   &__title {
@@ -62,29 +62,22 @@
 
   &__label::before {
     content: "";
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 38px;
     height: 38px;
-
     border: 1px solid #000;
     border-radius: 50%;
   }
 
-
   &__input--radio:checked + &__label::after {
   content: "";
-
   position: absolute;
   top: 13px;
   left: 13px;
-
   width: 15px;
   height: 15px;
-
   background-color: #63d1bb;
   border-radius: 50%;
   }

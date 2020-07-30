@@ -5,6 +5,7 @@
   background-color: @white;
 
   &__contacts {
+    width: 100%;
     position: relative;
     &::before {
       content: "";
@@ -16,20 +17,35 @@
       background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: repeat-y;
       background-position: 0 0;
-      background-size: 320px 6px;
+      background-size: 320px 7px;
       overflow: visible;
     }
   }
 
-  &__video {
-    margin: 0 30px;
-    padding-bottom: 58px;
-    box-sizing: border-box;
-  }
+  &__about {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 320px;
+      height: 6px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-y;
+      background-position: 0 0;
+      background-size: 320px 7px;
+    }
 
-  &__filters {
-    margin: 0;
-    padding: 17px 30px 55px 30px;
+    &__video {
+      margin: 0 30px;
+      padding-bottom: 58px;
+      box-sizing: border-box;
+    }
+
+    &__filters {
+      margin: 0;
+      padding: 17px 30px 55px 30px;
+    }
   }
 }
-
