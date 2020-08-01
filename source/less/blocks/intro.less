@@ -15,7 +15,7 @@
   &--catalog {
     background-color: @grey-light;
   }
-  
+
   &--form {
     background-color: @grey-light;
   }
@@ -27,6 +27,16 @@
     text-align: center;
     font-size: 27px;
     line-height: 30px;
+
+    &--catalog {
+      margin: 0;
+      padding: 0;
+    }
+
+    &--form {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__list {
@@ -127,20 +137,10 @@
     align-items: center;
   }
 
-  &--catalog &__title {
-    margin: 0;
-    padding: 0;
-  }
-
   &--form {
     height: 177px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &--form &__title {
-    margin: 0;
-    padding: 0;
   }
 }

@@ -1,6 +1,6 @@
 .filters {
   margin: 0 ;
-  padding: 17px 30px 55px 30px;
+  padding: 16px 30px 55px 30px;
 
   &__text {
     margin: 0;
@@ -44,7 +44,7 @@
 
     &--add {
       padding-top: 12px;
-      padding-bottom: 22px;
+      padding-bottom: 21px;
       width: 100%;
     }
 
@@ -103,9 +103,9 @@
     content: "";
     position: absolute;
     top: -10px;
-    left: 0px;
-    width: 35px;
-    height: 35px;
+    left: 1px;
+    width: 34px;
+    height: 34px;
     border: 2px solid #444444;
     border-radius: 50%;
   }
@@ -114,7 +114,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: 12px;
+  left: 12.5px;
   width: 15px;
   height: 15px;
   background-color: #63d1bb;
@@ -124,9 +124,9 @@
   &__input--checkbox + &__label::before {
     content: "";
     position: absolute;
-    top: -11px;
+    top: -12px;
     left: 0px;
-    width: 35px;
+    width: 34px;
     height: 35px;
     border: 2px solid #444444;
   }
@@ -135,7 +135,7 @@
     content: "";
     position: absolute;
     top: 0px;
-    left: 9px;
+    left: 8px;
     width: 20.87px;
     height: 16px;
     background-image: url("../img/icon-tick.svg");
@@ -163,22 +163,36 @@
     margin: 2px 0 23px 0;
     padding: 14px 0px;
     width: 100%;
-    font-size: 17px;
+    font-weight: normal;
+    font-size: 19px;
     line-height: 18px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid @black;
     display: inline-block;
     position: relative;
+    outline: none;
 
     &--phone::before {
       content: "";
       position: absolute;
       top: 0px;
-      left: 9px;
+      right: 0px;
       width: 21.09px;
       height: 22.32px;
       background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--email::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 32px;
+      height: 21px;
+      background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -193,15 +207,25 @@
       font-size: 17px;
       line-height: 18px;
     }
+
+    &:hover {
+      border-color: #62D1BA;
+    }
+
+    &:active {
+      border-color: #62D1BA;
+    }
   }
 
   &__textarea {
     margin: 0;
+    margin-bottom: 13px;
     padding: 17px;
     width: 100%;
     min-height: 142px;
     box-sizing: border-box;
     border: 2px solid #444444;
+    outline: none;
 
     &::placeholder {
       margin: 0;
@@ -218,11 +242,28 @@
   &__important {
     margin: 0;
     padding: 0;
-    margin-top: 2px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: @grey-dark;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 17px;
+    line-height: 16px;
+
+    &:hover {
+      color: @white;
+      background: linear-gradient(0deg, #444444, #444444);
+    }
+
+    &:active {
+      background: linear-gradient(0deg, #444444, #444444);
+      opacity: 0.3;
+    }
   }
 }
