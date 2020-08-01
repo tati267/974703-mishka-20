@@ -5,14 +5,17 @@
   font-size: 19px;
   line-height: 24px;
   color: @black;
+
    &--index {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: -127px -18px;
   }
+
   &--catalog {
     background-color: @grey-light;
   }
+  
   &--form {
     background-color: @grey-light;
   }
@@ -37,20 +40,24 @@
     margin: 0;
     height: 103px;
     box-sizing: border-box;
+
     &:hover {
       height: 108px;
     }
+
     &--lighter {
       background-color: @green-light;
     }
+
     &--darker {
       background-color: @green-dark;
     }
   }
 
-  &__item--lighter{
+  &__item--lighter {
     position: relative;
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       top: 23px;
@@ -61,19 +68,22 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+
     &:hover::before {
       top: 18px;
       background-image: url("../img/icon-interior-hover.svg");
     }
-    &:active::before{
+
+    &:active::before {
       top: 18px;
       background-image: url("../img/icon-interior-active.svg");
     }
   }
 
-  &__item--darker{
+  &__item--darker {
     position: relative;
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       top: 21px;
@@ -84,11 +94,13 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+
     &:hover::before {
       top: 16px;
       background-image: url("../img/icon-toy-hover.svg");
     }
-    &:active::before{
+
+    &:active::before {
       top: 16px;
       background-image: url("../img/icon-toy-active.svg");
     }
@@ -102,6 +114,7 @@
     font-size: 19px;
     line-height: 24px;
     display: inline-block;
+
     &:hover {
       padding: 19px 160px 31px 30px;
     }

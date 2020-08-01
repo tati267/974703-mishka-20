@@ -1,11 +1,11 @@
 .filters {
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 17px 30px 55px 30px;
 
   &__text {
     margin: 0;
     padding: 0;
-    padding-bottom: 29px;
+    padding-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -16,12 +16,39 @@
   &__title {
     margin: 0;
     padding: 0;
+    padding-top: 20px;
+    padding-bottom: 35px;
     font-size: 17px;
     line-height: 16px;
     color: @green-light;
     text-transform: uppercase;
     position: relative;
-    &::before{
+
+    &--name {
+      padding: 0;
+      width: 100%;
+      padding-bottom: 29px;
+    }
+
+    &--phone {
+      padding-top: 12px;
+      padding-bottom: 7px;
+      width: 100%;
+    }
+
+    &--email {
+      padding-top: 12px;
+      padding-bottom: 7px;
+      width: 100%;
+    }
+
+    &--add {
+      padding-top: 12px;
+      padding-bottom: 22px;
+      width: 100%;
+    }
+
+    &::before {
       content: "";
       position: absolute;
       top: 8px;
@@ -37,22 +64,34 @@
   &__list {
     margin: 0;
     padding: 0;
-    padding-top: 35px;
     list-style: none;
   }
 
   &__item {
     margin: 0;
     padding: 0;
-    padding-left: 42px;
-    padding-bottom: 43px;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
     color: @black;
-    position: relative;
+
+    &--type {
+      padding-bottom: 24px;
+    }
+
+    &--color {
+      padding-bottom: 43px;
+    }
   }
+
+  &__label {
+    padding-left: 60px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    }
 
   &__input {
     display: block;
@@ -60,25 +99,130 @@
     user-select: none;
   }
 
-  &__label::before {
+  &__input--radio + &__label::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 38px;
-    height: 38px;
-    border: 1px solid #000;
+    top: -10px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #444444;
     border-radius: 50%;
   }
 
   &__input--radio:checked + &__label::after {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 2px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-color: #63d1bb;
   border-radius: 50%;
+  }
+
+  &__input--checkbox + &__label::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #444444;
+  }
+
+  &__input--checkbox:checked + &__label::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 9px;
+    width: 20.87px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__input--radio:hover + &__label:hover:before,
+  &__input--checkbox:hover + &__label:hover:before{
+    border-color: #62D1BA;
+  }
+
+  &__input--radio:active + &__label:active:before,
+  &__input--checkbox:active + &__label:active:before{
+    border-color: @grey-dark;
+    opacity: 0.3;
+  }
+
+  &__label-name {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__input {
+    margin: 2px 0 23px 0;
+    padding: 14px 0px;
+    width: 100%;
+    font-size: 17px;
+    line-height: 18px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid @black;
+    display: inline-block;
+    position: relative;
+
+    &--phone::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 9px;
+      width: 21.09px;
+      height: 22.32px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &::placeholder {
+      margin: 0;
+      padding: 0;
+      color: @black;
+      opacity: 0.3;font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+
+  &__textarea {
+    margin: 0;
+    padding: 17px;
+    width: 100%;
+    min-height: 142px;
+    box-sizing: border-box;
+    border: 2px solid #444444;
+
+    &::placeholder {
+      margin: 0;
+      padding: 0;
+      color: @black;
+      opacity: 0.3;font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+
+  &__important {
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: @grey-dark;
   }
 }
