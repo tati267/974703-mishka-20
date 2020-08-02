@@ -22,7 +22,18 @@
     line-height: 16px;
     color: @green-light;
     text-transform: uppercase;
-    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 100px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: #63d1bb;
+  }
 
     &--name {
       padding: 0;

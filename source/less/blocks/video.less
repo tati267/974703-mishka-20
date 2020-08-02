@@ -30,20 +30,32 @@
   &__img {
     width: 260px;
     height: 150px;
+  }
+
+  &__wrapper {
     position: relative;
-    z-index: 1;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: calc(50% - 77px/2);
+      left: calc(50% - 101px/2);
       width: 100px;
       height: 77px;
-      background-image: url("../img/icon-play.svg");
+      background-image: url("../img/play.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      z-index: 2;
+      order: -1;
+    }
+
+    &:hover:before {
+      transform: scale(1.2, 1.2);
+    }
+
+    &:active:before {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+      opacity: 0.3;
     }
   }
 
