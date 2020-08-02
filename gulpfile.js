@@ -26,7 +26,7 @@ exports.styles = styles;
 // Server
 
 const server = (done) => {
-  sync.init( {
+  sync.init({
     server: {
       baseDir: 'source'
     },

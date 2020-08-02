@@ -1,10 +1,7 @@
 .products {
-  margin: 0;
   padding: 0 30px 30px 31px;
 
   &__list {
-    margin: 0;
-    padding: 0;
     list-style: none;
     color: @black;
   }
@@ -14,19 +11,14 @@
   }
 
   &__link {
-    margin: 0;
-    padding: 0;
     display: flex;
   }
 
   &__img {
-    margin: 0;
-    padding: 0;
     display: inline-block;
   }
 
-  &__wrapper {
-    margin: 0;
+  &__info {
     padding: 0 28px 26px 27px;
     border: 1px solid @grey-regular;
     box-sizing: border-box;
@@ -41,7 +33,6 @@
   }
 
   &__name {
-    margin: 0;
     padding: 27px 0 5px 0;
     &--toys {
       padding: 25px 0 10px 0;
@@ -49,12 +40,9 @@
   }
 
   &__link-item {
-    margin: 0;
-    padding: 0;
     font-size: 17px;
     line-height: 24px;
     color: @black;
-    text-decoration: none;
 
     &:hover {
       opacity: 0.6;
@@ -66,8 +54,6 @@
   }
 
   &__description {
-    margin: 0;
-    padding: 0;
     padding-bottom: 17px;
     font-weight: normal;
     font-size: 13px;
@@ -76,8 +62,6 @@
   }
 
   &__price {
-    margin: 0;
-    padding: 0;
     padding-top: 22px;
     font-size: 15px;
     line-height: 24px;
@@ -100,7 +84,7 @@
     &:hover::before {
       background-image: url("../img/icon-cart-hover.svg");
     }
-    
+
     &:active::before {
       background-image: url("../img/icon-cart-active.svg");
     }

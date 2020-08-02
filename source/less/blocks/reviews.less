@@ -1,6 +1,4 @@
 .reviews {
-  margin: 0;
-  padding: 0;
   padding:  0 30px 45px 30px;
   padding-left: 30px;
   padding-right: 30px;
@@ -8,29 +6,18 @@
   background-color: @white;
 
   &__title {
-    margin: 0;
-    padding: 0;
     padding-bottom: 14px;
     font-size: 25px;
     line-height: 30px;
     color: @black;
   }
 
-  &__list {
-    margin: 0;
-    padding: 0;
-  }
-
   &__item {
-    margin: 0;
-    padding: 0;
     width: 260px;
     padding-bottom: 32px;
   }
 
   &__text {
-    margin: 0;
-    padding: 0;
     font-size: 15px;
     line-height: 30px;
     font-weight: normal;
@@ -38,9 +25,7 @@
   }
 
   &__author {
-    margin: 0;
-    padding: 0;
-    font-family: Open Sans;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -49,11 +34,9 @@
   }
 
   &__nickname {
-    margin: 0;
-    padding: 0;
     display: inline-block;
     padding-top: 6px;
-    font-family: Open Sans;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -67,8 +50,6 @@
   }
 
   &__prev {
-    margin: 0;
-    padding: 0;
     width: 130px;
     height: 52px;
     border: 1px solid @grey-regular;
@@ -96,8 +77,6 @@
   }
 
   &__next {
-    margin: 0;
-    padding: 0;
     width: 130px;
     height: 52px;
     border: 1px solid @grey-regular;
@@ -137,14 +116,13 @@
     border: 2px solid @grey-light;
     box-sizing: border-box;
     background: @white;
-    text-decoration: none;
     text-transform: uppercase;
 
     &:hover {
       color: @white;
       background: linear-gradient(0deg, #444444, #444444);
     }
-    
+
     &:active {
       background: linear-gradient(0deg, #444444, #444444);
       opacity: 0.3;

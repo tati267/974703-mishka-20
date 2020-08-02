@@ -1,47 +1,40 @@
 .about-company {
-  margin: 0;
   padding: 38px 30px 59px 30px;
   color: @black;
   background-color: @white;
 
   &__title {
-    margin: 0;
-    padding: 0;
     font-size: 25px;
     line-height: 30px;
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
     list-style: none;
   }
 
   &__item {
-    margin: 0;
-    padding: 0;
-    padding-top: 82.5px;
+    padding-top: 83px;
     width: 100%;
     position: relative;
 
-    &--icon-1 {
+    &:nth-child(1) {
       width: 180px;
     }
 
-    &--icon-2,
-    &--icon-3 {
+    &:nth-child(2),
+    &:nth-child(3) {
       width: 200px;
     }
 
-    &--icon-4 {
+    &:nth-child(4) {
       width: 210px;
     }
 
-    &--icon-6 {
+    &:nth-child(6) {
       width: 200px;
     }
 
-    &--icon-1::before {
+    &:nth-child(1):before {
       content: "";
       position: absolute;
       top: 27px;
@@ -53,7 +46,7 @@
       background-position: 0 0;
     }
 
-    &--icon-2::before {
+    &:nth-child(2):before {
       content: "";
       position: absolute;
       top: 28px;
@@ -65,7 +58,7 @@
       background-position: 0 0;
     }
 
-    &--icon-3::before {
+    &:nth-child(3):before {
       content: "";
       position: absolute;
       top: 34px;
@@ -77,7 +70,7 @@
       background-position: 0 0;
     }
 
-    &--icon-4::before {
+    &:nth-child(4):before{
       content: "";
       position: absolute;
       top: 31px;
@@ -89,7 +82,7 @@
       background-position: 0 0;
     }
 
-    &--icon-5::before {
+    &:nth-child(5):before {
       content: "";
       position: absolute;
       top: 33px;
@@ -101,7 +94,7 @@
       background-position: 0 0;
     }
 
-    &--icon-6::before {
+    &:nth-child(6):before {
       content: "";
       position: absolute;
       top: 31px;
