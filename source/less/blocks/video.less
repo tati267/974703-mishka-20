@@ -1,6 +1,6 @@
 .video {
-  margin: 0 30px;
-  padding: 20px 0 33px 0;
+  margin: 0 30px 58px 30px;
+  padding-top: 20px;
   border: 1px solid @grey-regular;
   box-sizing: border-box;
 
@@ -59,29 +59,17 @@
     }
   }
 
+  &__block {
+    margin: 34px;
+  }
+
   &__description {
-    padding: 31px 0 41px 34px;
+    margin-right: -34px;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
     color: @grey-dark;
-  }
-
-  &__button {
-    margin: 0 32px;
-    padding: 17px 20px;
-    font-size: 18px;
-    line-height: 16px;
-
-    &:hover {
-      color: @white;
-      background: linear-gradient(0deg, #444444, #444444);
-    }
-
-    &:active {
-      background: linear-gradient(0deg, #444444, #444444);
-      opacity: 0.3;
-    }
+    padding-bottom: 41px;
   }
 }
 

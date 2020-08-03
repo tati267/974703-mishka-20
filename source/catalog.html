@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="preload" href="fonts/opensansbold.woff" as="font">
   <link rel="preload" href="fonts/opensans.woff" as="font">
@@ -16,7 +17,7 @@
       <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
     </a>
     <nav class="page-header__navigation navigation">
-      <button class="button button--burger navigation__button" type="button"><span class="visually-hidden">Открыть
+      <button class="button--burger navigation__button" type="button"><span class="visually-hidden">Открыть
           меню</span></button>
       <ul class="navigation__list navigation__list--closed">
         <li class="navigation__item navigation__item--active">
@@ -90,9 +91,11 @@
       <div class="video__wrapper">
         <img class="video__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео">
       </div>
-      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-        появляются наши товары.</p>
-      <button class="button video__button" type="button">Сделать заказ</button>
+      <div class="video__block">
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+          появляются наши товары.</p>
+        <button class="button button--video" type="button">Сделать заказ</button>
+      </div>
     </section>
   </main>
 

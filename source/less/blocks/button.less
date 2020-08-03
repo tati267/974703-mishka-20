@@ -3,22 +3,37 @@
   background-color: @white;
   border: 2px solid @grey-dark;
   text-transform: uppercase;
+  text-align: center;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   outline: none;
   cursor: pointer;
+  width: 100%;
+  padding: 14px 0;
+
+  &:hover {
+    color: @white;
+    background: linear-gradient(0deg, @grey-dark, @grey-dark);
+  }
+
+  &:active {
+    background: linear-gradient(0deg, @grey-dark, @grey-dark);
+    opacity: 0.3;
+  }
 
   &--burger {
-    position: absolute;
     width: 20px;
     height: 14px;
+    outline: none;
+    cursor: pointer;
+    background-color: @white;
+    position: absolute;
     top: 32px;
     right: 31px;
     border: 0;
-    outline: none;
 
     &::before {
       position: relative;
@@ -37,5 +52,24 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+  }
+
+  &--link {
+    display: inline-block;
+    width: 99%;
+    padding: 14px 0;
+  }
+
+  &--video {
+    line-height: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+
+  &--filters {
+    padding: 16px 0;
+    font-size: 17px;
+    line-height: 16px;
   }
 }
