@@ -45,53 +45,33 @@
   }
 
   &__item--lighter {
-    position: relative;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 245px 23px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 23px;
-      right: 35px;
-      width: 40px;
-      height: 62px;
-      background-image: url("../img/icon-interior.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
-    &:hover::before {
-      top: 18px;
+    &:hover {
+      background-position: 245px 18px;
       background-image: url("../img/icon-interior-hover.svg");
     }
 
-    &:active::before {
-      top: 18px;
+    &:active {
+      background-position: 245px 18px;
       background-image: url("../img/icon-interior-active.svg");
     }
   }
 
   &__item--darker {
-    position: relative;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 234px 21px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 21px;
-      right: 27px;
-      width: 60px;
-      height: 60px;
-      background-image: url("../img/icon-toy.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
-    &:hover::before {
-      top: 16px;
+    &:hover {
+      background-position: 234px 16px;
       background-image: url("../img/icon-toy-hover.svg");
     }
 
-    &:active::before {
-      top: 16px;
+    &:active {
+      background-position: 234px 16px;
       background-image: url("../img/icon-toy-active.svg");
     }
   }
