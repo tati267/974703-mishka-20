@@ -1,5 +1,4 @@
 .video {
-  margin: 0 30px 58px 30px;
   padding-top: 20px;
   border: 1px solid @grey-regular;
   box-sizing: border-box;
@@ -38,8 +37,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc(50% - 77px/2);
-      left: calc(50% - 101px/2);
+      top: calc(50% - 77px / 2);
+      left: calc(50% - 101px / 2);
       width: 100px;
       height: 77px;
       background-image: url("../img/play.svg");
@@ -48,11 +47,11 @@
       order: -1;
     }
 
-    &:hover:before {
+    &:hover::before {
       transform: scale(1.2, 1.2);
     }
 
-    &:active:before {
+    &:active::before {
       -webkit-transform: scale(0.8, 0.8);
       transform: scale(0.8, 0.8);
       opacity: 0.3;

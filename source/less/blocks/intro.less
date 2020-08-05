@@ -15,29 +15,21 @@
     background-position: -127px -18px;
   }
 
-  &__list {
-    list-style: none;
-    background-color: @grey-light;
-  }
-
   &__item {
-    height: 103px;
-    box-sizing: border-box;
+    width: 130px;
+    padding: 24px 160px 31px 30px;
+    color: @white;
+    font-size: 19px;
+    line-height: 24px;
+    display: inline-block;
 
     &:hover {
-      height: 108px;
-    }
-
-    &--lighter {
-      background-color: @green-light;
-    }
-
-    &--darker {
-      background-color: @green-dark;
+      padding: 19px 160px 36px 30px;
     }
   }
 
   &__item--lighter {
+    background-color: @green-light;
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: 245px 23px;
@@ -54,6 +46,7 @@
   }
 
   &__item--darker {
+    background-color: @green-dark;
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     background-position: 234px 21px;
@@ -66,19 +59,6 @@
     &:active {
       background-position: 234px 16px;
       background-image: url("../img/icon-toy-active.svg");
-    }
-  }
-
-  &__link {
-    width: 130px;
-    padding: 24px 160px 31px 30px;
-    color: @white;
-    font-size: 19px;
-    line-height: 24px;
-    display: inline-block;
-
-    &:hover {
-      padding: 19px 160px 31px 30px;
     }
   }
 
