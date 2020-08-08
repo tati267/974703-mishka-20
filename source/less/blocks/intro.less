@@ -1,0 +1,78 @@
+.intro {
+  min-height: 177px;
+  font-size: 19px;
+  line-height: 24px;
+  color: @black;
+  background-color: @grey-light;
+
+  &--index {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 72px 0 120px 0;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -127px -18px;
+  }
+
+  &__item {
+    width: 130px;
+    padding: 24px 160px 31px 30px;
+    color: @white;
+    font-size: 19px;
+    line-height: 24px;
+    display: inline-block;
+
+    &:hover {
+      padding: 19px 160px 36px 30px;
+    }
+  }
+
+  &__item--lighter {
+    background-color: @green-light;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 245px 23px;
+
+    &:hover {
+      background-position: 245px 18px;
+      background-image: url("../img/icon-interior-hover.svg");
+    }
+
+    &:active {
+      background-position: 245px 18px;
+      background-image: url("../img/icon-interior-active.svg");
+    }
+  }
+
+  &__item--darker {
+    background-color: @green-dark;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 234px 21px;
+
+    &:hover {
+      background-position: 234px 16px;
+      background-image: url("../img/icon-toy-hover.svg");
+    }
+
+    &:active {
+      background-position: 234px 16px;
+      background-image: url("../img/icon-toy-active.svg");
+    }
+  }
+
+  &--catalog {
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--form {
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

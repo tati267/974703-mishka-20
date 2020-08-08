@@ -1,0 +1,131 @@
+.button {
+  color: @grey-dark;
+  background-color: @white;
+  border: 2px solid @grey-dark;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 14px 0;
+
+  &:hover {
+    color: @white;
+    background: linear-gradient(0deg, @grey-dark, @grey-dark);
+  }
+
+  &:active {
+    background: linear-gradient(0deg, @grey-dark, @grey-dark);
+    opacity: 0.3;
+  }
+
+  &--burger {
+    width: 20px;
+    height: 14px;
+    outline: none;
+    cursor: pointer;
+    background-color: @white;
+    position: absolute;
+    top: 25px;
+    right: 41px;
+    border: 0;
+
+    &::before {
+      position: relative;
+      background-color: transparent;
+      border: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 14px;
+      background-image: url("../img/icon-menu-open.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &--link {
+    display: inline-block;
+    width: 99%;
+    padding: 14px 0;
+  }
+
+  &--video {
+    line-height: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+
+  &--filters {
+    padding: 16px 0;
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  &--prev {
+    width: 130px;
+    height: 52px;
+    border: 1px solid @grey-regular;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 37px;
+      width: 50px;
+      height: 26px;
+      background-image: url("../img/icon-left-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &:hover {
+      background: transparent;
+      opacity: 0.6;
+    }
+
+    &:active {
+      background: transparent;
+      opacity: 0.3;
+    }
+  }
+
+  &--next {
+    width: 130px;
+    height: 52px;
+    border: 1px solid @grey-regular;
+    position: relative;
+
+    &:hover {
+      background: transparent;
+      opacity: 0.6;
+    }
+
+    &:active {
+      background: transparent;
+      opacity: 0.3;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 37px;
+      width: 50px;
+      height: 26px;
+      background-image: url("../img/icon-right-arrow.svg");
+      background-repeat: repeat;
+      background-position: 0 0;
+    }
+  }
+}
