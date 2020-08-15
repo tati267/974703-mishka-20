@@ -3,7 +3,21 @@
   line-height: 18px;
   color: @black;
   background: @grey-light;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__logo {
+    display: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   &__social {
     height: 80px;
@@ -20,3 +34,23 @@
     border-top: 1px solid #e5e5e5;
   }
 }
+
+@media @tablet {
+  .page-footer{
+    flex-direction: row;
+
+    &__logo {
+      display: block;
+    }
+
+    &__social {
+      width: 303px;
+    }
+
+    &__copyright {
+      margin-top: 13px;
+      border-top: none;
+    }
+  }
+}
+

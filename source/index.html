@@ -35,10 +35,8 @@
   </header>
 
   <main class="page__main page-main">
-    <section class="page-main__intro intro">
-      <div class="intro--index">
-        <h1 class="title title--index">Милые штуки<br>ручной<br>работы для дома</h1>
-      </div>
+    <section class="page-main__intro intro intro--index">
+      <h1 class="title title--index">Милые штуки ручной<br>работы для дома</h1>
       <div class="intro__blocks">
         <a class="intro__item intro__item--lighter" href="#">Предметы интерьера</a>
         <a class="intro__item intro__item--darker" href="#">Детские игрушки</a>
@@ -48,25 +46,31 @@
     <section class="page-main__goods wrapper goods">
       <h2 class="title">Вязаные корзинки</h2>
       <span class="goods__text">Товар недели</span>
-      <p class="goods__description">Экологически чистая пряжа, ручная работа.
-        Доступны в шести расцветках, и трех размерах.</p>
-      <table class="goods__table">
-        <tr class="goods__row">
-          <th class="goods__first-column">Цвет:</th>
-          <td class="goods__second-column">«Тиффани»/серый</td>
-        </tr>
-        <tr class="goods__row">
-          <th class="goods__first-column">Диаметр:</th>
-          <td class="goods__second-column">25 см</td>
-        </tr>
-        <tr class="goods__row">
-          <th class="goods__first-column">Высота:</th>
-          <td class="goods__second-column">15 см</td>
-        </tr>
-      </table>
-      <img class="goods__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-      <p class="goods__price">Цена: 990 руб.</p>
-      <button class="button" type="button">Заказать</button>
+      <div class="goods__info">
+        <p class="goods__description">Экологически чистая пряжа, ручная работа.
+          Доступны в шести расцветках, и трех размерах.</p>
+        <table class="goods__table">
+          <tr class="goods__row">
+            <th class="goods__first-column">Цвет:</th>
+            <td class="goods__second-column">«Тиффани»/серый</td>
+          </tr>
+          <tr class="goods__row">
+            <th class="goods__first-column">Диаметр:</th>
+            <td class="goods__second-column">25 см</td>
+          </tr>
+          <tr class="goods__row">
+            <th class="goods__first-column">Высота:</th>
+            <td class="goods__second-column">15 см</td>
+          </tr>
+        </table>
+      </div>
+      <div class="goods__img">
+        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+      </div>
+      <div class="goods__order">
+        <p class="goods__price">Цена: 990 руб.</p>
+        <button class="button" type="button">Заказать</button>
+      </div>
     </section>
 
     <section class="page-main__about about-company">
@@ -83,8 +87,8 @@
       </div>
     </section>
 
-    <article class="page-main__reviews wrapper reviews">
-      <div class="slider">
+    <article class="page-main__reviews reviews">
+      <div class="wrapper">
         <h2 class="title">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews__item">
@@ -120,7 +124,7 @@
             </button>
           </div>
         </div>
-        <a class="button button--link" href="form.html">Написать</a>
+        <a class="button button--link button--review" href="form.html">Написать</a>
       </div>
     </article>
 
@@ -136,21 +140,22 @@
           </div>
           <div class="contacts__row">
             <span class="contacts__first-column">aдрес:</span>
-            <p class="contacts__second-column">г. Санкт-Петербург, ул. Большая Конюшенная д.19/8, офис 101</p>
+            <p class="contacts__second-column">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
           </div>
         </div>
       </div>
 
       <div class="contacts__map"></div>
 
-      <div class="wrapper contacts__body">
-        <button class="button" type="button">Напишите нам</button>
+      <div class="wrapper">
+        <button class="button button--contacts" type="button">Напишите нам</button>
       </div>
     </section>
   </main>
 
   <footer class="page__footer page-footer">
     <div class="wrapper">
+      <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34" alt="Логотип Mishka"></a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

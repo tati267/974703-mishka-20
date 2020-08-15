@@ -14,3 +14,27 @@
     margin-bottom: 58px;
   }
 }
+
+@media (min-width: @tablet) {
+  .page-main {
+
+    &__contacts,
+    &__about {
+      background-size: 772px 17px;
+    }
+
+    &__intro::before {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 220px 0;
+      background-size: 770px 24px;
+    }
+
+    &__reviews {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: -6px 0;
+      background-size: 320px 7px;
+    }
+  }
+}

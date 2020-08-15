@@ -1,18 +1,22 @@
 .intro {
   min-height: 177px;
-  font-size: 19px;
-  line-height: 24px;
-  color: @black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: @grey-light;
 
   &--index {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 72px 0 120px 0;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: -127px -18px;
+  }
+
+  &__blocks {
+    width: 320px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
   }
 
   &__item {
@@ -21,7 +25,7 @@
     color: @white;
     font-size: 19px;
     line-height: 24px;
-    display: inline-block;
+    display: block;
 
     &:hover {
       padding: 19px 160px 36px 30px;
@@ -61,12 +65,84 @@
       background-image: url("../img/icon-toy-active.svg");
     }
   }
+}
 
-  &--catalog,
-  &--form {
-    height: 177px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: @tablet) {
+  .intro {
+    min-height: 746px;
+
+    &--index {
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: -191px 0px;
+    }
+
+    &__blocks {
+      width: 668px;
+      flex-direction: row;
+      padding: 0 50px;
+    }
+
+    &__item {
+      width: 334px;
+      padding: 25px 167px 34px 36px;
+      font-size: 20px;
+      line-height: 30px;
+
+      &:hover {
+        padding: 20px 167px 39px 36px;
+      }
+    }
+
+    &__item--lighter {
+      background-position: 258px 30px;
+
+      &:hover {
+        background-position: 258px 25px;
+      }
+
+      &:active {
+        background-position: 258px 25px;
+      }
+    }
+
+    &__item--darker {
+      background-position: 240px 30px;
+
+      &:hover {
+        background-position: 240px 25px;
+      }
+
+      &:active {
+        background-position: 240px 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .intro {
+    min-height: 746px;
+
+    &--index {
+      padding-top: 157px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: -127px -18px;
+    }
+
+    &__blocks {
+      flex-direction: row;
+      margin: 0 50px;
+    }
+
+    &__item {
+      width: 130px;
+      padding: 25px 350px 34px 37px;
+      font-size: 20px;
+      line-height: 30px;
+
+      &:hover {
+        padding: 20px 350px 39px 37px;
+      }
+    }
   }
 }

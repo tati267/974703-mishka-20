@@ -53,3 +53,64 @@
     }
   }
 }
+
+@media (min-width: @tablet) {
+
+  .about-company {
+    padding: 73px 0 82px 0;
+
+    &__list {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 22px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 100%;
+      padding-top: 110px;
+
+      &:nth-child(1) {
+        width: 230px;
+        padding-right: 104px;
+        padding-top: 98px;
+        background-position: 8px 40px;
+      }
+
+      &:nth-child(2) {
+        width: 260px;
+        padding-right: 74px;
+        order: 3;
+        background-position: 0px 57px;
+      }
+
+      &:nth-child(3) {
+        width: 242px;
+        padding-right: 92px;
+        order: 5;
+        background-position: 8px 63px;
+      }
+
+      &:nth-child(4) {
+        width: 278px;
+        order: 2;
+        padding-top: 98px;
+        background-position: 4px 45px;
+      }
+
+      &:nth-child(5) {
+        width: 334px;
+        order: 4;
+        background-position: -5px 60px;
+      }
+
+      &:nth-child(6) {
+        width: 263px;
+        order: 6;
+        background-position: 3px 59px;
+      }
+    }
+  }
+}

@@ -7,9 +7,64 @@
     font-size: 18px;
   }
 
-  &--index,
-  &--catalog {
+  &--header {
+    width: 260px;
     font-size: 27px;
-    line-height: 30px;
+    text-align: center;
+    padding-top: 73px;
+  }
+
+  &--index {
+    width: 260px;
+    font-size: 27px;
+    text-align: center;
+    padding-top: 73px;
+    padding-bottom: 119px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+
+    &--contacts {
+      font-size: 43px;
+      line-height: 55px;
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    &--header {
+      width: 668px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &--index {
+      width: 668px;
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 155px;
+      padding-bottom: 372px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+
+    &--contacts {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &--header {
+      width: 700px;
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 }

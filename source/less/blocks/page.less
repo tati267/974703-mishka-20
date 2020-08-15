@@ -1,11 +1,13 @@
 .page {
   min-width: 320px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: @black;
+  background-color: red;
 
   &__header {
     position: relative;
@@ -14,7 +16,31 @@
   &__header,
   &__main,
   &__footer  {
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet) {
+  .page {
+    min-width: 768px;
+  }
+
+  &__header,
+  &__main,
+  &__footer  {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page {
+    min-width: 1200px;
+  }
+
+  &__header,
+  &__main,
+  &__footer  {
+    min-width: 1200px;
   }
 }
