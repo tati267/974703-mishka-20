@@ -12,28 +12,24 @@
     width: 100%;
 
     &:nth-child(1) {
-      width: 180px;
       background-image: url("../img/icon-feature-flower.svg");
       background-repeat: no-repeat;
       background-position: 8px 27px;
     }
 
     &:nth-child(2) {
-      width: 200px;
       background-image: url("../img/icon-feature-money.svg");
       background-repeat: no-repeat;
       background-position: 0px 28px;
     }
 
     &:nth-child(3) {
-      width: 200px;
       background-image: url("../img/icon-feature-heart.svg");
       background-repeat: no-repeat;
       background-position: 7px 33px;
     }
 
     &:nth-child(4) {
-      width: 210px;
       background-image: url("../img/icon-feature-ball.svg");
       background-repeat: no-repeat;
       background-position: 4px 30px;
@@ -46,10 +42,62 @@
     }
 
     &:nth-child(6) {
-      width: 200px;
       background-image: url("../img/icon-feature-gift.svg");
       background-repeat: no-repeat;
       background-position: 3px 29px;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+
+  .about-company {
+    padding: 73px 0 82px 0;
+
+    &__list {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 30px;
+    }
+
+    &__item {
+      padding-top: 111px;
+      width: 50%;
+
+      &:nth-child(1) {
+        padding-top: 68px;
+        background-position: 8px 12px;
+      }
+
+      &:nth-child(2) {
+        order: 3;
+        background-position: 0px 57px;
+      }
+
+      &:nth-child(3) {
+        order: 5;
+        background-position: 8px 63px;
+      }
+
+      &:nth-child(4) {
+        padding-top: 68px;
+        order: 2;
+        background-position: 3px 14px;
+      }
+
+      &:nth-child(5) {
+        order: 4;
+        background-position: -5px 60px;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+        background-position: 3px 59px;
+      }
     }
   }
 }

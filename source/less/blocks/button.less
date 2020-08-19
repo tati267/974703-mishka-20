@@ -91,6 +91,7 @@
   }
 
   &--video {
+    width: 192px;
     line-height: 16px;
     display: inline-block;
     box-sizing: border-box;
@@ -158,6 +159,51 @@
       background-image: url("../img/icon-right-arrow.svg");
       background-repeat: repeat;
       background-position: 0 0;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .button  {
+    font-size: 17px;
+
+    &--prev {
+      width: 87px;
+      height: 52px;
+      border: none;
+
+
+      &::before {
+        top: 12px;
+        left: 17px;
+      }
+    }
+
+    &--next {
+      width: 87px;
+      height: 52px;
+      border: none;
+
+      &::before {
+        top: 12px;
+        left: 17px;
+      }
+    }
+
+    &--review {
+      position: absolute;
+      top: 81px;
+      right: 50px;
+      width: 171px;
+    }
+
+    &--contacts {
+      margin: 0 219px;
+      width: 230px;
+    }
+
+    &--video {
+      width: 100%;
     }
   }
 }

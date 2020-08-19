@@ -70,3 +70,41 @@
     border-top: 1px solid @grey-regular;
   }
 }
+
+@media (min-width: @tablet) {
+  .products {
+    padding: 24px 0 53px 0;
+
+    &__item {
+      padding-top: 54px;
+      display: flex;
+    }
+
+    &__info {
+      width: 335px;
+      padding: 27px 34px 26px 34px;
+    }
+
+    &__name {
+      padding: 27px 0 5px 0;
+
+      &--toys {
+        padding: 24px 0 10px 0;
+      }
+    }
+
+    &__link-item {
+      font-size: 20px;
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+
+    &__price {
+      padding-top: 24px;
+      font-size: 17px;
+      justify-content: flex-end;
+    }
+  }
+}
