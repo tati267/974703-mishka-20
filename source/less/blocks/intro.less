@@ -12,14 +12,12 @@
   }
 
   &__blocks {
-    width: 320px;
+    width: 100%;
     display: flex;
-    justify-content: end;
     flex-direction: column;
   }
 
   &__item {
-    width: 130px;
     padding: 24px 160px 31px 30px;
     color: @white;
     font-size: 19px;
@@ -75,13 +73,13 @@
     }
 
     &__blocks {
-      width: 668px;
+      width: 87%;
       flex-direction: row;
       padding: 0 auto;
     }
 
     &__item {
-      width: 334px;
+      width: 50%;
       padding: 25px 167px 34px 36px;
       font-size: 20px;
       line-height: 30px;
@@ -94,11 +92,7 @@
     &__item--lighter {
       background-position: 258px 30px;
 
-      &:hover {
-        background-position: 258px 25px;
-      }
-
-      &:active {
+      &:hover, &:active  {
         background-position: 258px 25px;
       }
     }
@@ -106,40 +100,8 @@
     &__item--darker {
       background-position: 240px 30px;
 
-      &:hover {
+      &:hover, &:active {
         background-position: 240px 25px;
-      }
-
-      &:active {
-        background-position: 240px 25px;
-      }
-    }
-  }
-}
-
-@media (min-width: @desktop) {
-  .intro {
-    min-height: 746px;
-
-    &--index {
-      padding-top: 157px;
-      background-image: url("../img/hero-tablet@1x.jpg");
-      background-position: -127px -18px;
-    }
-
-    &__blocks {
-      flex-direction: row;
-      margin: 0 50px;
-    }
-
-    &__item {
-      width: 130px;
-      padding: 25px 350px 34px 37px;
-      font-size: 20px;
-      line-height: 30px;
-
-      &:hover {
-        padding: 20px 350px 39px 37px;
       }
     }
   }
