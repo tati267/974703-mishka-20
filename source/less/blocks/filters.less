@@ -52,11 +52,12 @@
       padding-bottom: 25px;
     }
 
-    &--phone, &--email {
+    &--phone,
+    &--email {
       padding-bottom: 3px;
     }
 
-    &--add{
+    &--add {
       padding-bottom: 23px;
     }
   }
@@ -138,8 +139,8 @@
   }
 
   &__input {
-    margin: 0 0 21px 0;
-    padding: 14px 0px;
+    margin-bottom: 21px;
+    padding: 14px 0;
     width: 100%;
     font-weight: normal;
     font-size: 19px;
@@ -152,7 +153,8 @@
     cursor: pointer;
 
     &--phone {
-      margin: 0 0 35px 0;
+      margin-bottom: 35px;
+
       &::after {
         background-image: url("../img/icon-phone.svg");
         background-repeat: no-repeat;
@@ -162,6 +164,7 @@
 
     &--email {
       margin: 0 0 35px 0;
+
       &::after {
         background-image: url("../img/icon-mail.svg");
         background-repeat: no-repeat;
@@ -185,8 +188,8 @@
     outline: none;
   }
 
-  &__input, &__textarea {
-
+  &__input,
+  &__textarea {
     &::placeholder {
       color: @black;
       opacity: 0.3;
@@ -208,7 +211,6 @@
 }
 
 @media (min-width: @tablet) {
-
   .filters {
     padding: 66px 0 50px 0;
 
@@ -222,7 +224,7 @@
       padding: 66px 0;
 
       &--name {
-        padding-bottom: 0px;
+        padding-bottom: 0;
       }
     }
 
@@ -241,8 +243,11 @@
         display: none;
       }
 
-      &--name,&--phone, &--email, &--add{
-        padding-bottom: 0px;
+      &--name,
+      &--phone,
+      &--email,
+      &--add {
+        padding-bottom: 0;
       }
     }
 
@@ -260,7 +265,7 @@
 
     &__input--radio + &__label::before {
       top: -20px;
-      left: 0px;
+      left: 0;
       width: 50px;
       height: 50px;
     }
@@ -292,7 +297,7 @@
 
     &__input {
       margin: 0 0 21px 0;
-      padding: 14px 0px;
+      padding: 14px 0;
       width: 100%;
       font-weight: normal;
       font-size: 19px;
@@ -306,6 +311,7 @@
 
       &--phone {
         margin: 0 0 35px 0;
+
         &::after {
           background-image: url("../img/icon-phone.svg");
           background-repeat: no-repeat;
@@ -315,6 +321,7 @@
 
       &--email {
         margin: 0 0 35px 0;
+
         &::after {
           background-image: url("../img/icon-mail.svg");
           background-repeat: no-repeat;
@@ -338,8 +345,8 @@
       outline: none;
     }
 
-    &__input, &__textarea {
-
+    &__input,
+    &__textarea {
       &::placeholder {
         color: @black;
         opacity: 0.3;
