@@ -221,7 +221,11 @@
     }
 
     &__list {
-      padding: 66px 0;
+      padding-top: 66px;
+      padding-bottom: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-grow: 1;
 
       &--name {
         padding-bottom: 0;
@@ -233,8 +237,18 @@
       flex-direction: row;
     }
 
+    &__color {
+      min-height: 304px;
+      flex-direction: row;
+    }
+
+    &__contact-info {
+      min-height: 304px;
+      flex-direction: row;
+    }
+
     &__title {
-      width: 167px;
+      min-width: 167px;
       padding-top: 66px;
       padding-bottom: 0;
       align-items: flex-start;
@@ -242,25 +256,18 @@
       &::after {
         display: none;
       }
-
-      &--name,
-      &--phone,
-      &--email,
-      &--add {
-        padding-bottom: 0;
-      }
     }
 
     &__item {
       font-size: 19px;
+
+      &--color {
+        width: 42%;
+      }
     }
 
     &__label {
       padding-left: 80px;
-
-      &--color {
-        width: 166px;
-      }
     }
 
     &__input--radio + &__label::before {
@@ -275,11 +282,6 @@
       left: 15px;
       width: 24px;
       height: 24px;
-    }
-
-    &__color {
-      min-height: 420px;
-      flex-direction: row;
     }
 
     &__input--checkbox + &__label::before {

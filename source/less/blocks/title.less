@@ -32,6 +32,19 @@
     &--contacts {
       font-size: 43px;
       line-height: 55px;
+      position: relative;
+
+      &--contacts::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 47px;
+        height: 81px;
+        background-image: url("../img/icon-flag.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
     }
 
     &--header {
