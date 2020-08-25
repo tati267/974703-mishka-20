@@ -17,9 +17,56 @@
 
 @media (min-width: @tablet) {
   .page-main {
+    &__goods,
+    &__products {
+    position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -55px;
+        width: 773px;
+        height: 24px;
+        background-image: url(../img/line.svg);
+        background-repeat: repeat-x;
+        background-size: 780px 24px;
+      }
+    }
+
+    &__filters {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -5px;
+        width: 773px;
+        height: 24px;
+        background-image: url(../img/line.svg);
+        background-repeat: repeat-x;
+        background-size: 780px 24px;
+      }
+    }
+
     &__contacts,
     &__about {
       background-size: 772px 17px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-main {
+    &__contacts,
+    &__about {
+      margin: 0 50px;
+      background-size: 1050px 23px;
+    }
+
+    &__reviews {
+      margin: 0 50px;
     }
   }
 }

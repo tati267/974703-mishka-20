@@ -34,11 +34,11 @@
       line-height: 55px;
       position: relative;
 
-      &--contacts::before {
+      &::before {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -20px;
+        right: 25px;
         width: 47px;
         height: 81px;
         background-image: url("../img/icon-flag.svg");
@@ -67,6 +67,10 @@
   .title {
     font-size: 53px;
     line-height: 57px;
+
+    &--index {
+      padding-bottom: 357px;
+    }
 
     &--contacts,
     &--header {

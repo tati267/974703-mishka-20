@@ -79,3 +79,36 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .reviews {
+    padding-left: 174px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: 0 0;
+
+    &__item {
+      padding-top: 35px;
+      padding-bottom: 47px;
+    }
+
+    &__text {
+      font-size: 17px;
+      font-weight: normal;
+      padding-bottom: 45px;
+    }
+
+    &__author {
+      font-size: 17px;
+    }
+
+    &__button-review {
+      right: 0;
+    }
+
+    &__buttons {
+      position: absolute;
+      bottom: 80px;
+      right: 50px;
+    }
+  }
+}
