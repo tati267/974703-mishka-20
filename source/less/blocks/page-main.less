@@ -17,24 +17,56 @@
 
 @media (min-width: @tablet) {
   .page-main {
+    &__goods,
+    &__products {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -55px;
+        width: 773px;
+        height: 24px;
+        background-image: url("../img/line.svg");
+        background-repeat: repeat-x;
+        background-size: 780px 24px;
+      }
+    }
+
+    &__filters {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -5px;
+        width: 773px;
+        height: 24px;
+        background-image: url("../img/line.svg");
+        background-repeat: repeat-x;
+        background-size: 780px 24px;
+      }
+    }
 
     &__contacts,
     &__about {
       background-size: 772px 17px;
     }
+  }
+}
 
-    &__intro::before {
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: 220px 0;
-      background-size: 770px 24px;
+@media (min-width: @desktop) {
+  .page-main {
+    &__contacts,
+    &__about {
+      margin: 0 50px;
+      background-size: 1050px 23px;
     }
 
     &__reviews {
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: -6px 0;
-      background-size: 320px 7px;
+      margin: 0 50px;
     }
   }
 }

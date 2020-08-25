@@ -1,5 +1,19 @@
 .logo {
-  margin: 22px 118px 18px 116px;
-  background-color: @white;
-  display: inline-block;
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+@media (min-width: @tablet) {
+  .logo {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo {
+    width: 149px;
+    height: 72px;
+  }
 }

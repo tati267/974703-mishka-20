@@ -74,8 +74,8 @@
       position: absolute;
       width: 20px;
       height: 19px;
-      top: 0px;
-      right: 0px;
+      top: 0;
+      right: 0;
       background-image: url("../img/icon-cart.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -164,8 +164,12 @@
 }
 
 @media (min-width: @tablet) {
-  .button  {
+  .button {
     font-size: 17px;
+
+    &--burger {
+      display: none;
+    }
 
     &--prev {
       width: 87px;
@@ -204,6 +208,11 @@
 
     &--video {
       width: 100%;
+    }
+
+    &--filters {
+      width: 230px;
+      order: -1;
     }
   }
 }
