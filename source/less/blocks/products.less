@@ -112,3 +112,22 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .products {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 316px;
+      height: 462px;
+    }
+  }
+}

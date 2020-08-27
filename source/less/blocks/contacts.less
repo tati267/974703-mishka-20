@@ -88,3 +88,39 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .contacts {
+    padding: 173px 0 190px 173px;
+    display: flex;
+    position: relative;
+
+    &__body {
+      flex-direction: column;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      padding-top: 33px;
+    }
+
+    &__second-column {
+      width: 255px;
+    }
+
+
+    &__map {
+      position: absolute;
+      right: -245px;
+      top: 95px;
+
+      margin: 0;
+      width: 768px;
+      height: 457px;
+      background-image: url("../img/map-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}

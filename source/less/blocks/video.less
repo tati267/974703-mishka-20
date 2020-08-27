@@ -137,3 +137,35 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .video {
+    flex-direction: row;
+    position: relative;
+
+    &__title {
+      position: absolute;
+      padding: 0;
+      right: 0;
+      width: 179px;
+    }
+
+    &__img {
+      width: 683px;
+      height: 455px;
+      order: 1;
+    }
+
+    &__block {
+      max-width: 231px;
+      margin: 171px 57px 60px 80px;
+      order: 2;
+    }
+
+    &__description {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}
+
