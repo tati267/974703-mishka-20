@@ -146,8 +146,16 @@
     &__title {
       position: absolute;
       padding: 0;
-      right: 0;
+      font-size: 20px;
+      line-height: 24px;
+      top: 92px;
+      right: 110px;
       width: 179px;
+
+      &::before {
+        top: -50px;
+        left: 3px;
+      }
     }
 
     &__img {
@@ -158,13 +166,13 @@
 
     &__block {
       max-width: 231px;
-      margin: 171px 57px 60px 80px;
-      order: 2;
+      margin: 0;
+      margin-top: 167px;
+      margin-left: 78px;
     }
 
     &__description {
-      font-size: 15px;
-      line-height: 30px;
+      padding-bottom: 52px;
     }
   }
 }

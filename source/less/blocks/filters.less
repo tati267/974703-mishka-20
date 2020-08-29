@@ -451,3 +451,79 @@
     }
   }
 }
+
+@media (min-width: @desktop) {
+  .filters {
+    padding: 100px 0 50px 0;
+
+    &__text {
+      margin: 0 auto;
+      padding-left: 19.5%;
+      padding-right: 18%;
+    }
+
+    &__list {
+      &--type {
+        flex-direction: column;
+      }
+
+      &--color {
+        padding-right: 93px;
+      }
+    }
+
+    &__item {
+      &--color {
+        width: 33%;
+      }
+    }
+
+    &__title {
+      min-width: 115px;
+    }
+
+    &__type {
+      padding-left: 5.4%;
+    }
+
+    &__color{
+      padding-left: 9.8%;
+      min-height: 228px;
+    }
+
+    &__name,
+    &__phone,
+    &__email {
+      margin: 0 auto;
+      padding-left: 9.8%;
+      padding-right: 19.5%;
+    }
+
+    &__phone-img {
+      top: 55px;
+      right: 20.2%;
+    }
+
+    &__email-img {
+      top: 8px;
+      right: 20%;
+    }
+
+    &__add {
+      padding-left: 5.5%;
+      padding-right: 15%;
+      min-height: 190px;
+    }
+
+    &__textarea {
+      &::placeholder {
+        padding-left: 0;
+      }
+    }
+
+    &__form-end {
+      padding-left: 19.7%;
+      padding-right: 19.6%;
+    }
+  }
+}
