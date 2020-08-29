@@ -17,7 +17,9 @@
   }
 
   &__info {
-    padding: 0 28px 26px 27px;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 28px;
     border: 1px solid @grey-regular;
     box-sizing: border-box;
     position: relative;
@@ -28,14 +30,6 @@
 
     &:active {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  &__name {
-    padding: 27px 0 5px 0;
-
-    &--toys {
-      padding: 24px 0 10px 0;
     }
   }
 
@@ -54,7 +48,8 @@
   }
 
   &__description {
-    padding-bottom: 17px;
+    padding-top: 5px;
+    flex-grow: 1;
     font-weight: normal;
     font-size: 13px;
     line-height: 30px;
@@ -62,7 +57,8 @@
   }
 
   &__price {
-    padding-top: 23px;
+    justify-content: flex-end;
+    padding-top: 21px;
     font-size: 15px;
     line-height: 24px;
     color: @black;
@@ -85,16 +81,9 @@
     }
 
     &__info {
-      width: 335px;
-      padding: 27px 34px 26px 34px;
-    }
-
-    &__name {
-      padding: 27px 0 5px 0;
-
-      &--toys {
-        padding: 24px 0 10px 0;
-      }
+      padding: 26px 33px;
+      max-width: 335px;
+      min-height: 334px;
     }
 
     &__link-item {
@@ -103,25 +92,48 @@
 
     &__description {
       font-size: 15px;
+      padding-top: 7px;
     }
 
     &__price {
       padding-top: 24px;
       font-size: 17px;
-      justify-content: flex-end;
     }
   }
 }
 
 @media (min-width: @desktop) {
   .products {
+    padding: 110px 0 57px 0;
+
     &__list {
       display: flex;
       justify-content: space-between;
     }
 
+    &__link {
+      display: flex;
+    }
+
     &__item {
+      padding: 0;
+      max-width: 316px;
+      box-sizing: border-box;
       flex-direction: column;
+    }
+
+    &__info {
+      min-height: 197px;;
+      width: 316px;
+      padding: 24px 34px 26px 28px;
+    }
+
+    &__name {
+      padding: 0 0 5px 0;
+    }
+
+    &__description {
+      padding-top: 0;
     }
 
     &__img {
