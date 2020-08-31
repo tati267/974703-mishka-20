@@ -1,0 +1,48 @@
+.modal {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 28px 30px 46px 30px;
+  position: fixed;
+  top: 20%;
+  left: calc(50% - 160px);
+  z-index: 6;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  display: none;
+
+  &__text {
+    font-weight: normal;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 30px;
+    color: @grey-dark;
+  }
+
+  &__form {
+    margin-top: 21px;
+  }
+
+  &--on {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet){
+  .modal {
+    left: calc(50% - 283px);
+    box-sizing: border-box;
+    padding: 37px 106px 46px 106px;
+    width: 566px;
+
+    &__text {
+      margin-top: 13px;
+      font-size: 17px;
+    }
+
+    &__form {
+      margin-top: 18px;
+    }
+  }
+}
