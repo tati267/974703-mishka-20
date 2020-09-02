@@ -19,11 +19,10 @@ window.addEventListener("keydown", function (evt) {
 });
 
 //Burger
-
 const buttonBurger = document.querySelector(".js-burger");
 const navigationLink = document.querySelector(".navigation__item--off");
 
-navToggle.addEventListener("click", function () {
+buttonBurger.addEventListener("click", function () {
   // console.log(links.classList);
   // console.log(links.classList.contains("random"));
   // console.log(links.classList.contains("links"));
@@ -32,5 +31,5 @@ navToggle.addEventListener("click", function () {
   // } else {
   //   links.classList.add("show-links");
   // }
-  links.classList.toggle("navigation__item--on");
+  navigationLink.classList.toggle("navigation__item--on");
 });
