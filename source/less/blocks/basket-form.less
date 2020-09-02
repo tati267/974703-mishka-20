@@ -1,0 +1,35 @@
+.basket-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__label-size {
+    box-sizing: border-box;
+    padding: 16px 10px;
+    width: 82px;
+    line-height: 16px;
+    font-weight: 700;
+    border: 2px solid #ececec;
+
+    &:hover,
+    &:focus {
+      border-color: #c7c7c7;
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
+  }
+
+  &__radio-size:checked + .basket-form__label-size {
+    border-color: #62d1ba;
+  }
+}
+
+@media (min-width: @tablet) {
+  .basket-form {
+    &__label-size {
+      width: 112px;
+    }
+  }
+}

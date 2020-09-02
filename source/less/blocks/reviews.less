@@ -65,13 +65,6 @@
       font-size: 18px;
     }
 
-    &__button-review {
-      position: absolute;
-      top: -5px;
-      right: 50px;
-      width: 171px;
-    }
-
     &__buttons {
       position: absolute;
       bottom: 80px;
@@ -82,11 +75,12 @@
 
 @media (min-width: @desktop) {
   .reviews {
-    padding-left: 174px;
+    padding: 80px 0 118px 125px;
     background-image: url("../img/review@1x.jpg");
     background-position: 0 0;
 
     &__item {
+      width: 100%;
       padding-top: 35px;
       padding-bottom: 47px;
     }
@@ -101,14 +95,9 @@
       font-size: 17px;
     }
 
-    &__button-review {
-      right: 0;
-    }
-
     &__buttons {
-      position: absolute;
-      bottom: 80px;
-      right: 50px;
+      bottom: 128px;
+      right: 0;
     }
   }
 }
