@@ -6,66 +6,67 @@
   position: relative;
   margin-bottom: 39px;
 
-  @media (min-width: @tablet) {
-    margin: 0 auto 55px auto;
+  &__api {
+    width: 100%;
+    height: 457px;
   }
 
-  @media (min-width: @desktop) {
+  &__image-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-height: 457px;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-31%, -84%);
+      content: "";
+      width: 67px;
+      height: 100px;
+      background-image: url("../img/icon-map-pin.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 768px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .map {
+    margin: 0 auto 55px auto;
+
+    &::after {
+      transform: translate(-30%, -91%);
+    }
+
+    &__image-wrapper::after {
+      width: 768px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .map {
     width: 525px;
     position: absolute;
-    top: 9px;
-    right: 51px;
-  }
-}
+    top: 92px;
+    right: 100px;
 
-.map::after {
-  @media (min-width: @tablet) {
-    transform: translate(-30%, -91%);
-  }
+    &::after {
+      transform: translate(-35%, -83%);
+    }
 
-  @media (min-width: @desktop) {
-    transform: translate(-35%, -83%);
-  }
-}
-
-.map__api {
-  width: 100%;
-  height: 457px;
-  background-color: #a3a3a3;
-}
-
-.map__image-wrapper {
-  width: 100%;
-  height: auto;
-  position: relative;
-  min-height: 457px;
-
-  &::after {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-31%, -84%);
-    content: "";
-    width: 67px;
-    height: 100px;
-    background-image: url("../img/icon-map-pin.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: @tablet) {
-    width: 768px;
-  }
-}
-
-.map__image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 768px;
-
-  @media (min-width: @desktop) {
-    left: 0;
-    transform: translateX(0%);
+    &__image {
+      left: 0;
+      transform: translateX(0%);
+    }
   }
 }
