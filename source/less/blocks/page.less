@@ -1,6 +1,4 @@
 .page {
-  width: 320px;
-  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -19,28 +17,24 @@
     min-width: 320px;
     margin: 0 auto;
   }
+
 }
 
 @media (min-width: @tablet) {
   .page {
-    width: 768px;
-  }
-
-  &__header,
-  &__main,
-  &__footer {
-    min-width: 768px;
+    &__header,
+    &__main {
+      width: 768px;
+    }
   }
 }
 
 @media (min-width: @desktop) {
   .page {
-    min-width: 1150px;
-  }
-
-  &__header,
-  &__main,
-  &__footer {
-    min-width: 1150px;
+    &__header,
+    &__main,
+    &__footer {
+      width: 1150px;
+    }
   }
 }

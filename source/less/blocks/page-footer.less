@@ -1,10 +1,16 @@
 .page-footer {
+  width: 100%;
   font-size: 19px;
   line-height: 18px;
   color: @black;
   background: @grey-light;
-  display: grid;
-  grid-auto-flow: row;
+
+  &__container {
+    width: 320px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+  }
 
   &__logo {
     display: none;
@@ -41,10 +47,12 @@
 
 @media (min-width: @tablet) {
   .page-footer {
-    padding: 0 50px;
-    grid-auto-flow: column;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 145px;
+    &__container {
+      width: 668px;
+      grid-auto-flow: column;
+      grid-template-columns: 33% 33% 34%;
+      grid-template-rows: 145px;
+    }
 
     &__logo {
       grid-column: 1 / 2;
@@ -65,6 +73,14 @@
       grid-row: 1 / 1;
       margin: auto 0;
       margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-footer {
+    &__container {
+      width: 1050px;
     }
   }
 }
