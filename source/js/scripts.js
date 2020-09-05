@@ -1,9 +1,21 @@
+//Navigation
+var navItems = document.querySelector(".navigation__item:not(:first-of-type)");
+var burgerBtn = document.querySelector(".js-burger");
+
+burgerBtn.addEventListener("click", function () {
+  burgerBtn.classList.toggle("close");
+
+  navItems.forEach(function (item) {
+    item.classList.toggle("navigation__item--off");
+  })
+});
+
 //Modal
 var buttonOrder = document.querySelector(".button-order--js");
 var modal = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 
-buttonOrder.addEventListener("click", function (evt) {
+buttonOrder.addEventListener('click', function () {
   evt.preventDefault();
   modal.classList.add("modal--on");
   overlay.classList.add("overlay--on");
@@ -62,14 +74,14 @@ const reviews = [
   {
     id: 2,
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend id nisi non ullamcorper. Nullam nunc dolor, consectetur id consectetur in, rhoncus ac diam. In porttitor efficitur sollicitudin. Donec rhoncus, felis et feugiat fermentum, quam turpis mattis ipsum, in molestie lectus nibh eleifend tortor. Sed fringilla leo magna, eu vulputate lacus venenatis ac. Vivamus ullamcorper dui in ante facilisis lobortis. Vestibulum et venenatis tortor, sed pretium lectus. Suspendisse scelerisque faucibus fermentum. Donec eu venenatis ex. Duis risus ligula, viverra a tristique vitae, hendrerit sed quam. Nam pulvinar aliquet enim sit amet blandit. Donec vitae tortor ut urna rhoncus dignissim id vitae felis. Ut sed leo dapibus, imperdiet nulla eget, molestie odio. Nunc pulvinar quam lectus, ut ultrices orci blandit quis. Cras id varius ante. Morbi vitae lorem ut justo fringilla pulvinar.",
-    author: "Катя Сям",
+      "Выбор в магазине очень и очень большой, на многие товары есть приличные скидки. От курьерской доставки я отказался, нашел магазин недалеко от меня. Приехал на следующий день и спокойно оплатив заказ на месте забрал его.",
+    author: "Сэм",
     nickname: "@kras",
   },
   {
     id: 3,
     text:
-      "Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.",
+      "В основном детские товары я всегда заказываю в интернет-магазинах, так как не хочу тратить время на поход по магазинам. Цены на интересующие меня товары оказались выгодными. Магазин мне очень понравился, я довольна!",
     author: "Лена",
     nickname: "@missss",
   }
