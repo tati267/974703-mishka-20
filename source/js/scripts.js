@@ -5,7 +5,7 @@ var burgerBtn = document.querySelector(".js-burger");
 burgerBtn.addEventListener("click", function () {
   burgerBtn.classList.toggle("close");
 
-  navItems.forEach(function (item) {
+  navItems.querySelectorAll(function (item) {
     item.classList.toggle("navigation__item--off");
   })
 });
