@@ -165,12 +165,10 @@
     outline: none;
     cursor: pointer;
 
-    &--phone {
-      margin-bottom: 35px;
-    }
-
+    &--phone,
     &--email {
-      margin: 0 0 35px 0;
+      margin-bottom: 35px;
+      padding-right: 50px;
     }
 
     &:hover,
@@ -406,6 +404,7 @@
       &--email {
         background-color: #f1f1f1;
         height: 52px;
+        padding-right: 60px;
       }
     }
 
@@ -508,6 +507,13 @@
     &__email-img {
       top: 8px;
       right: 20%;
+    }
+
+    &__input {
+      &--phone,
+      &--email {
+        padding-right: 50px;
+      }
     }
 
     &__add {
