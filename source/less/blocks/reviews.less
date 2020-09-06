@@ -1,6 +1,7 @@
 .reviews {
   margin: 0 auto;
   padding-bottom: 45px;
+  box-sizing: border-box;
 
   &__item {
     padding-top: 14px;
@@ -37,6 +38,10 @@
     display: flex;
     margin-bottom: 36px;
   }
+
+  &__wrapper {
+    padding: 0 30px;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -47,6 +52,10 @@
     background-position: 0 0;
     background-size: 350px auto;
     position: relative;
+
+    &__wrapper {
+      padding: 0 50px;
+    }
 
     &__item {
       width: 100%;
@@ -78,12 +87,14 @@
 
 @media (min-width: @desktop) {
   .reviews {
-    padding: 80px 0 118px 125px;
+    margin: 0 50px;
+    padding: 80px 50px 118px 125px;
     background-image: url("../img/review@1x.jpg");
     background-position: 0 0;
 
     &__item {
       width: 100%;
+      min-height: 190px;
       padding-top: 35px;
       padding-bottom: 47px;
     }
@@ -91,7 +102,7 @@
     &__text {
       font-size: 17px;
       font-weight: normal;
-      padding-bottom: 45px;
+      padding-bottom: 0px;
     }
 
     &__author {
@@ -100,7 +111,7 @@
 
     &__buttons {
       bottom: 128px;
-      right: 0;
+      right: 100px;
     }
   }
 }
