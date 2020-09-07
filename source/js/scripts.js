@@ -29,7 +29,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
 //Map
 if (document.querySelector(".map")) {
   var imageMap = document.querySelector(".map__image-wrapper");
