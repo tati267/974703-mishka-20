@@ -9,41 +9,10 @@
     background-position: 0 0;
     background-size: 320px 7px;
   }
-
-  &__video {
-    margin-bottom: 58px;
-  }
 }
 
 @media (min-width: @tablet) {
   .page-main {
-    &__goods,
-    &__products,
-    &__filters {
-      position: relative;
-      width: 100%;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: -15px;
-        left: -15px;
-        display: block;
-        width: 100%;
-        height: 24px;
-        background-image: url("../img/line.svg");
-        background-repeat: repeat-x;
-      }
-    }
-
-    &__products,
-    &__filters {
-      &::before {
-        top: -19px;
-        left: 0;
-      }
-    }
-
     &__contacts,
     &__about {
       background-size: 772px 17px;
