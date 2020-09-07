@@ -16,7 +16,6 @@ var modal = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 
 buttonOrder.addEventListener('click', function () {
-  evt.preventDefault();
   modal.classList.add("modal--on");
   overlay.classList.add("overlay--on");
 });
