@@ -1,11 +1,11 @@
 //Navigation
-var navItems = document.querySelector(".navigation__item:not(:first-of-type)");
+var navItems = document.querySelectorAll(".navigation__item:not(:first-of-type)");
 var burgerBtn = document.querySelector(".js-burger");
 
 burgerBtn.addEventListener("click", function () {
-  burgerBtn.classList.toggle("close");
+  burgerBtn.classList.toggle("button--close");
 
-  navItems.querySelectorAll(function (item) {
+  navItems.forEach(function (item) {
     item.classList.toggle("navigation__item--off");
   })
 });
@@ -61,7 +61,7 @@ if (document.querySelector(".map")) {
 
 
 // Reviews
-const reviews = [
+var reviews = [
   {
     id: 1,
     text:
@@ -85,11 +85,11 @@ const reviews = [
   }
 ];
 
-const text = document.getElementById("reviewsText");
-const author = document.getElementById("reviewsAuthor");
-const nickname = document.getElementById("reviewsNickname");
-const buttonPrev = document.querySelector(".button--prev");
-const buttonNext = document.querySelector(".button--next");
+var text = document.getElementById("reviewsText");
+var author = document.getElementById("reviewsAuthor");
+var nickname = document.getElementById("reviewsNickname");
+var buttonPrev = document.querySelector(".button--prev");
+var buttonNext = document.querySelector(".button--next");
 
 
 // set starting item
