@@ -1,6 +1,6 @@
 .goods {
   margin: 0 auto;
-  padding: 30px 30px 36px 30px;
+  padding: 30px 0 36px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@
 
 @media (min-width: @tablet) {
   .goods {
-    padding: 51px 50px 52px 50px;
+    padding: 51px 0 52px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,7 +134,7 @@
 
 @media (min-width: @desktop) {
   .goods {
-    padding: 130px 50px 74px 225px;
+    padding: 130px 50px 74px 175px;
     position: relative;
 
     &__first-column,
@@ -145,7 +145,11 @@
     &__text {
       position: absolute;
       top: 135px;
-      left: -45px;
+      left: -95px;
+    }
+
+    &__info {
+      width: 48%;
     }
 
     &__item {
@@ -170,7 +174,7 @@
       width: 525px;
       height: 636px;
       top: -100px;
-      right: -220px;
+      right: -255px;
     }
   }
 }
