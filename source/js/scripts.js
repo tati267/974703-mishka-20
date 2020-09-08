@@ -11,14 +11,19 @@ burgerBtn.addEventListener("click", function () {
 });
 
 //Modal
-var buttonOrder = document.querySelector(".button-order--js");
+var buttonOrder = document.querySelectorAll(".button-order--js");
 var modal = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 
-buttonOrder.addEventListener('click', function () {
-  modal.classList.add("modal--on");
-  overlay.classList.add("overlay--on");
-});
+if (buttonOrder) {
+  buttonOrder.forEach(function (button) {
+    button.addEventListener("click", function () {
+      modal.classList.add("modal--on");
+      overlay.classList.add("overlay--on");
+    });
+  });
+}
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -98,9 +103,9 @@ let currentItem = 0;
 // load initial item
 window.addEventListener("DOMContentLoaded", function () {
   const item = reviews[currentItem];
-  text.textContent = item.text;
-  author.textContent = item.author;
-  nickname.textContent = item.nickname;
+  text ? (text.textContent = item.text) : null;
+  author ? (textContent = item.author) : null;
+  nickname ? (textContent = item.nickname) : null;
 });
 
 // show person based on item
@@ -110,19 +115,25 @@ function showPerson(person) {
   author.textContent = item.author;
   nickname.textContent = item.nickname;
 }
-// show next person
-buttonNext.addEventListener("click", function () {
-  currentItem++;
-  if (currentItem > reviews.length - 1) {
-    currentItem = 0;
-  }
-  showPerson(currentItem);
-});
-// show prev person
-buttonPrev.addEventListener("click", function () {
-  currentItem--;
-  if (currentItem < 0) {
-    currentItem = reviews.length - 1;
-  }
-  showPerson(currentItem);
-});
+
+if (buttonPrev) {
+  // show prev person
+  buttonPrev.addEventListener("click", function () {
+    currentItem--;
+    if (currentItem < 0) {
+      currentItem = reviews.length - 1;
+    }
+    showPerson(currentItem);
+  });
+}
+
+if (buttonNext) {
+  // show next person
+  buttonNext.addEventListener("click", function () {
+    currentItem++;
+    if (currentItem > reviews.length - 1) {
+      currentItem = 0;
+    }
+    showPerson(currentItem);
+  });
+}
