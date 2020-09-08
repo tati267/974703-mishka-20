@@ -8,20 +8,20 @@
   background-color: @white;
 
   &__header {
+    width: 320px;
+    margin: 0 auto;
     position: relative;
   }
 
-  &__header,
-  &__main {
-    min-width: 320px;
-    margin: 0 auto;
+  &__footer {
+    width: 100%;
+    background: @grey-light;
   }
 }
 
 @media (min-width: @tablet) {
   .page {
-    &__header,
-    &__main {
+    &__header {
       width: 768px;
     }
   }
@@ -29,8 +29,7 @@
 
 @media (min-width: @desktop) {
   .page {
-    &__header,
-    &__main {
+    &__header {
       width: 1150px;
     }
   }

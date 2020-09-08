@@ -34,6 +34,7 @@
     top: 25px;
     right: 41px;
     border: 0;
+    display: block;
 
     &::before {
       position: relative;
@@ -47,6 +48,34 @@
       width: 20px;
       height: 14px;
       background-image: url("../img/icon-menu-open.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &--close {
+    width: 21px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: @white;
+    position: absolute;
+    top: 20px;
+    right: 41px;
+    border: 0;
+
+    &::before {
+      position: relative;
+      background-color: transparent;
+      border: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 20px;
+      background-image: url("../img/icon-menu-close.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -66,7 +95,7 @@
     background-color: transparent;
     position: absolute;
     bottom: 33px;
-    right: 32px;
+    right: 25px;
     border: 0;
   }
 
@@ -142,6 +171,12 @@
     }
   }
 
+  &--contacts {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+  }
+
   &--basket-form {
     margin-top: 30px;
     padding: 18px 30px;
@@ -204,6 +239,22 @@
       width: 230px;
     }
 
+    &--products {
+      right: 32px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:hover path {
+        fill: @green-light;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
     &--video {
       width: 100%;
     }
@@ -219,7 +270,7 @@
   .button {
     &--contacts {
       position: absolute;
-      left: 175px;
+      left: 225px;
       bottom: 105px;
       margin: 0;
       padding: 16px 27px;
@@ -227,7 +278,7 @@
     }
 
     &--review {
-      right: 0;
+      right: 50px;
     }
   }
 }

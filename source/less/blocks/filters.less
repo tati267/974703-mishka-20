@@ -42,12 +42,6 @@
     min-height: 420px;
   }
 
-  &__color,
-  &__phone,
-  &__email {
-    padding: 0 30px;
-  }
-
   &__title {
     padding-bottom: 36px;
     font-size: 17px;
@@ -165,12 +159,10 @@
     outline: none;
     cursor: pointer;
 
-    &--phone {
-      margin-bottom: 35px;
-    }
-
+    &--phone,
     &--email {
-      margin: 0 0 35px 0;
+      margin-bottom: 35px;
+      padding-right: 50px;
     }
 
     &:hover,
@@ -194,13 +186,13 @@
   &__phone-img {
     position: absolute;
     top: 30px;
-    right: 37px;
+    right: 7px;
   }
 
   &__email-img {
     position: absolute;
     top: 31px;
-    right: 33px;
+    right: 3px;
   }
 
   &__phone-img,
@@ -253,6 +245,11 @@
   .filters {
     padding: 66px 0 50px 0;
 
+    &__color-fill {
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+
     &__text {
       padding-bottom: 15px;
       font-size: 17px;
@@ -289,7 +286,7 @@
       &--color {
         padding: 13px 0 16px 0;
         margin-bottom: 24px;
-        width: 48%;
+        width: 240px;
       }
 
       &--name {
@@ -328,8 +325,6 @@
 
     &__color {
       background-color: #f1f1f1;
-      padding-left: 50px;
-      padding-right: 50px;
     }
 
     &__type {
@@ -348,12 +343,12 @@
 
     &__phone-img {
       top: 58px;
-      right: 76px;
+      right: 27px;
     }
 
     &__email-img {
       top: 10px;
-      right: 72px;
+      right: 23px;
     }
 
     &__add {
@@ -406,12 +401,13 @@
       &--email {
         background-color: #f1f1f1;
         height: 52px;
+        padding-right: 60px;
       }
     }
 
     &__textarea {
       height: 142px;
-      padding: 15px;
+      padding: 15px 0;
       margin-bottom: 0;
 
       &::placeholder {
@@ -420,11 +416,11 @@
     }
 
     &__phone {
-      padding: 48px 50px 24px 50px;
+      padding: 48px 0 24px 0;
     }
 
     &__email {
-      padding: 0 50px 50px 50px;
+      padding: 0 0 50px 0;
     }
 
     &__input,
@@ -455,16 +451,16 @@
 
 @media (min-width: @desktop) {
   .filters {
-    padding: 100px 0 50px 0;
+    padding: 120px 0 27px 0;
 
     &__text {
       margin: 0 auto;
-      padding-left: 19%;
-      padding-right: 18%;
+      padding: 0 175px;
     }
 
     &__list {
       &--type {
+        padding-top: 66px;
         flex-direction: column;
       }
 
@@ -475,20 +471,34 @@
 
     &__item {
       &--color {
-        width: 33%;
+        width: 260px;
       }
     }
 
     &__title {
+      padding-left: 5px;
       min-width: 115px;
+
+      &--type {
+        padding-top: 80px;
+      }
+
+      &--email {
+        padding-top: 17px;
+      }
+
+      &--add {
+        padding-left: 0;
+        padding-top: 17px;
+      }
     }
 
     &__type {
-      padding-left: 5%;
+      padding-left: 56px;
     }
 
     &__color {
-      padding-left: 10%;
+      padding-left: 56px;
       min-height: 228px;
     }
 
@@ -496,35 +506,41 @@
     &__phone,
     &__email {
       margin: 0 auto;
-      padding-left: 10%;
-      padding-right: 19%;
+      padding-left: 56px;
+      padding-right: 175px;
     }
 
     &__phone-img {
       top: 55px;
-      right: 20.2%;
+      right: 185px;
     }
 
     &__email-img {
       top: 8px;
-      right: 20%;
+      right: 180px;
+    }
+
+    &__input {
+      &--phone,
+      &--email {
+        padding-right: 50px;
+      }
     }
 
     &__add {
-      padding-left: 5.5%;
-      padding-right: 15%;
+      padding-left: 60px;
+      padding-right: 175px;
       min-height: 190px;
     }
 
     &__textarea {
       &::placeholder {
-        padding-left: 0;
+        padding-left: 15px;
       }
     }
 
     &__form-end {
-      padding-left: 20%;
-      padding-right: 20%;
+      padding: 0 225px;
     }
   }
 }
