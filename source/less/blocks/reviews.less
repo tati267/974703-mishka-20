@@ -2,6 +2,9 @@
   margin: 0 auto;
   padding-bottom: 45px;
   box-sizing: border-box;
+  color: @grey-dark;
+  line-height: 24px;
+  font-weight: normal;
 
   &__item {
     padding-top: 14px;
@@ -11,26 +14,22 @@
   &__text {
     font-size: 15px;
     line-height: 30px;
-    font-weight: normal;
     padding-bottom: 34px;
-    color: @grey-dark;
   }
 
   &__author {
+    color: @black;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 24px;
-    color: @black;
   }
 
   &__nickname {
-    display: inline-block;
     padding-top: 6px;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
-    line-height: 24px;
     color: @grey-dark;
   }
 
@@ -59,7 +58,7 @@
 
     &__item {
       width: 100%;
-      min-height: 239px;
+      min-height: 232px;
       padding-top: 39px;
       padding-bottom: 47px;
       display: flex;
@@ -68,12 +67,12 @@
 
     &__text {
       font-size: 17px;
+      padding: 0;
       flex-grow: 1;
-      font-weight: normal;
-      padding-bottom: 61px;
     }
 
     &__author {
+      align-items: flex-end;
       font-size: 18px;
     }
 
@@ -101,18 +100,10 @@
 
     &__text {
       width: 875px;
-      font-size: 17px;
-      font-weight: normal;
-      padding-bottom: 0;
-    }
-
-    &__author {
-      font-size: 17px;
     }
 
     &__buttons {
       bottom: 128px;
-      right: 50px;
     }
   }
 }

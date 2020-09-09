@@ -22,6 +22,11 @@ if (buttonOrder) {
       overlay.classList.add("overlay--on");
     });
   });
+
+  overlay.addEventListener('click', () => {
+    overlay.classList.remove("overlay--on");
+    modal.classList.remove("modal--on");
+  });
 }
 
 window.addEventListener("keydown", function (evt) {
