@@ -1,14 +1,10 @@
 .filters {
   padding: 17px 0 55px 0;
   box-sizing: border-box;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 18px;
-  color: @black;
 
   &__text {
     padding-bottom: 30px;
+    font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
@@ -80,7 +76,11 @@
   }
 
   &__item {
+    font-style: normal;
+    font-weight: bold;
     font-size: 17px;
+    line-height: 18px;
+    color: @black;
   }
 
   &__label {
@@ -149,6 +149,9 @@
     margin-bottom: 21px;
     padding: 14px 0;
     width: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid @black;
@@ -229,6 +232,7 @@
 
   &__important {
     margin-bottom: 30px;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
@@ -242,7 +246,7 @@
 
     &__color-fill {
       width: 100%;
-      background-color: @grey-light;
+      background-color: #f1f1f1;
     }
 
     &__text {
@@ -319,7 +323,7 @@
     }
 
     &__color {
-      background-color: @grey-light;
+      background-color: #f1f1f1;
     }
 
     &__type {
@@ -333,7 +337,7 @@
 
     &__phone,
     &__email {
-      background-color: @grey-light;
+      background-color: #f1f1f1;
     }
 
     &__phone-img {
@@ -394,7 +398,7 @@
 
       &--phone,
       &--email {
-        background-color: @grey-light;
+        background-color: #f1f1f1;
         height: 52px;
         padding-right: 60px;
       }
@@ -423,6 +427,7 @@
       &::placeholder {
         padding-left: 17px;
         font-size: 19px;
+        line-height: 18px;
       }
     }
 
@@ -528,7 +533,9 @@
     }
 
     &__textarea {
-      padding: 15px;
+      &::placeholder {
+        padding-left: 15px;
+      }
     }
 
     &__form-end {
