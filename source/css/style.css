@@ -1536,6 +1536,8 @@ input[type="radio"].visually-hidden {
 .filters {
   padding: 17px 0 55px 0;
   box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
 }
 .filters__text {
   padding-bottom: 30px;
@@ -1850,20 +1852,20 @@ input[type="radio"].visually-hidden {
   .filters__input--radio + .filters__label::before {
     top: -20px;
     left: 0;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .filters__input--radio:checked + .filters__label::after {
     top: -4px;
     left: 15px;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
   .filters__input--checkbox + .filters__label::before {
     left: 0;
     top: -16px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .filters__input--checkbox:checked + .filters__label::after {
     top: 2px;
