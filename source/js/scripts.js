@@ -2,6 +2,7 @@
 var navItems = document.querySelectorAll(".navigation__item:not(:first-of-type)");
 var burgerBtn = document.querySelector(".js-burger");
 
+burgerBtn.classList.add("button--show");
 burgerBtn.addEventListener("click", function () {
   burgerBtn.classList.toggle("button--close");
 
