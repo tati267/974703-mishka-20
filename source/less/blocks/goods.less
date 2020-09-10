@@ -1,26 +1,23 @@
 .goods {
   margin: 0 auto;
-  padding: 30px 0 36px 0;
+  padding: 32px 0 34px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  font-weight: normal;
+  color: @grey-dark;
 
   &__text {
     display: block;
     padding-top: 5px;
-    font-style: normal;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
     color: @green-light;
     text-transform: uppercase;
   }
 
   &__description {
-    width: 100%;
-    font-weight: normal;
     padding-top: 17px;
-    color: @grey-dark;
+    width: 100%;
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 21px;
@@ -29,10 +26,8 @@
   &__table {
     width: 100%;
     margin-bottom: 30px;
-    font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-    color: @grey-dark;
     text-align: left;
     border-collapse: collapse;
   }
@@ -44,10 +39,9 @@
   &__first-column,
   &__second-column {
     padding: 9px 0;
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 20px;
+    font-weight: normal;
   }
 
 
@@ -55,19 +49,12 @@
     width: 38%;
   }
 
-  &__order {
-    margin: 0;
-  }
-
   &__price {
-    padding-top: 23px;
+    padding-top: 22px;
     margin-bottom: 24px;
-    font-style: normal;
     font-weight: bold;
-    font-size: 17px;
     line-height: 24px;
     text-align: center;
-    color: @grey-dark;
   }
 }
 
@@ -81,12 +68,10 @@
     &__text {
       width: 100px;
       margin-left: 128px;
-      line-height: 17px;
       text-align: center;
     }
 
     &__item {
-      width: 100%;
       position: relative;
       margin-top: 39px;
     }
@@ -96,7 +81,6 @@
     }
 
     &__description {
-      width: 100%;
       padding-top: 0;
       font-size: 17px;
       line-height: 30px;
@@ -108,18 +92,17 @@
     }
 
     &__first-column {
-      width: 34%;
+      width: 97px;
     }
 
     &__price {
-      width: 292px;
       margin-bottom: 32px;
       font-size: 20px;
     }
 
     &__order {
       width: 292px;
-      padding-top: 38px;
+      padding-top: 40px;
     }
 
     &__img {
@@ -134,7 +117,7 @@
 
 @media (min-width: @desktop) {
   .goods {
-    padding: 130px 50px 74px 175px;
+    padding: 132px 50px 74px 175px;
     position: relative;
 
     &__first-column,
@@ -143,8 +126,9 @@
     }
 
     &__text {
+      line-height: 17px;
       position: absolute;
-      top: 135px;
+      top: 134px;
       left: -95px;
     }
 
@@ -163,11 +147,11 @@
 
     &__description {
       padding-top: 55px;
-      margin-bottom: 53px;
+      margin-bottom: 50px;
     }
 
     &__order {
-      padding-top: 86px;
+      padding-top: 88px;
     }
 
     &__img {

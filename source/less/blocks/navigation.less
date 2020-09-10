@@ -104,8 +104,8 @@
         padding: 0;
         width: 84px;
         height: 89px;
-        border-left: 1px solid #ececec;
-        border-right: 1px solid #ececec;
+        border-left: 1px solid @grey-regular;
+        border-right: 1px solid @grey-regular;
         order: 1;
         display: block;
       }
@@ -115,37 +115,37 @@
         width: 264px;
         order: 2;
         display: block;
+        line-height: 24px;
+      }
+
+      &--catalog,
+      &--knitting,
+      &--delivery {
+        display: block;
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 20px;
       }
 
       &--catalog {
-        margin-top: 20px;
         margin-left: 50px;
         width: 167px;
-        font-size: 15px;
         order: 3;
-        display: block;
       }
 
       &--knitting {
-        margin-top: 20px;
         order: 4;
         width: 167px;
-        font-size: 15px;
         padding: 0;
-        display: block;
       }
 
       &--delivery {
-        margin-top: 18px;
         margin-right: 50px;
         margin-left: auto;
         text-align: right;
         width: 231px;
         order: 5;
         font-weight: normal;
-        font-size: 15px;
-        line-height: 24px;
-        display: block;
       }
     }
 
@@ -181,6 +181,14 @@
         order: 3;
       }
 
+      &--catalog,
+      &--knitting,
+      &--basket {
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0;
+      }
+
       &--basket {
         padding: 33px 0 30px 82px;
         width: 311px;
@@ -188,23 +196,26 @@
       }
 
       &--catalog {
-        margin: 0;
         padding: 32px 0 32px 50px;
         width: 235px;
-        font-size: 17px;
-        line-height: 24px;
         order: 0;
-        border-right: 1px solid #ececec;
+        border-right: 1px solid @grey-regular;
       }
 
       &--knitting {
-        margin: 0;
         padding: 32px 0 32px 35px;
         width: 265px;
-        font-size: 17px;
-        line-height: 24px;
         order: 1;
       }
+
+      &--new-products,
+      &--sale,
+      &--delivery {
+        font-size: 15px;
+        line-height: 24px;
+        display: block;
+      }
+
 
       &--delivery {
         margin-right: 50px;
@@ -213,19 +224,13 @@
 
       &--new-products {
         margin: 19px 0 0 50px;
-        display: block;
         width: 220px;
-        font-size: 15px;
-        line-height: 24px;
         order: 5;
       }
 
       &--sale {
         margin-top: 19px;
-        display: block;
         width: 130px;
-        font-size: 15px;
-        line-height: 24px;
         order: 6;
       }
     }
