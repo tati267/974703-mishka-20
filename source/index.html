@@ -120,17 +120,19 @@
       </div>
     </section>
 
-    <section class="page-main__about container about-company">
+    <section class="container page-main__about about-company">
       <div class="wrapper">
-        <h2 class="title">Коротко о нас:</h2>
-        <ul class="about-company__list">
-          <li class="about-company__item">Экологически чистые материалы</li>
-          <li class="about-company__item">Скандинавский стиль по российской цене</li>
-          <li class="about-company__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-company__item">Связано вручную с любовью и умилением</li>
-          <li class="about-company__item">Поддержка отечественного производителя</li>
-          <li class="about-company__item">Поставляется в подарочной упаковке</li>
-        </ul>
+        <div class="about-company__container">
+          <h2 class="title">Коротко о нас:</h2>
+          <ul class="about-company__list">
+            <li class="about-company__item">Экологически чистые материалы</li>
+            <li class="about-company__item">Скандинавский стиль по российской цене</li>
+            <li class="about-company__item">Увеличивает лайки на фотографиях</li>
+            <li class="about-company__item">Связано вручную с любовью и умилением</li>
+            <li class="about-company__item">Поддержка отечественного производителя</li>
+            <li class="about-company__item">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -159,42 +161,44 @@
       </div>
     </article>
 
-    <section class="page-main__contacts contacts">
-      <div class="container">
-        <div class="wrapper">
-          <h2 class="title title--contacts">Контакты</h2>
-          <div class="contacts__body">
-            <div class="contacts__row">
-              <span class="contacts__first-column">e-mail:</span>
-              <p class="contacts__second-column">
-                <a class="contacts__email">info@mimimishkashop.ru</a>
-              </p>
-            </div>
-            <div class="contacts__row">
-              <span class="contacts__first-column">aдрес:</span>
-              <p class="contacts__second-column">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
+    <section class="page-main__contacts">
+      <div class="contacts__container contacts">
+        <div class="container">
+          <div class="wrapper">
+            <h2 class="title title--contacts">Контакты</h2>
+            <div class="contacts__body">
+              <div class="contacts__row">
+                <span class="contacts__first-column">e-mail:</span>
+                <p class="contacts__second-column">
+                  <a class="contacts__email">info@mimimishkashop.ru</a>
+                </p>
+              </div>
+              <div class="contacts__row">
+                <span class="contacts__first-column">aдрес:</span>
+                <p class="contacts__second-column">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="map">
-        <div class="map__api" id="google-map" tabindex="-2"></div>
-        <div class="map__image-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-            <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+        <div class="map">
+          <div class="map__api" id="google-map" tabindex="-2"></div>
+          <div class="map__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+              <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
 
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
-          </picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+            </picture>
+          </div>
         </div>
-      </div>
 
-      <div class="container">
-        <button class="button button--contacts" type="button">Напишите нам</button>
+        <div class="container">
+          <button class="button button--contacts" type="button">Напишите нам</button>
+        </div>
       </div>
     </section>
   </main>

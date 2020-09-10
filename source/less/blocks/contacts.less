@@ -71,8 +71,14 @@
 
 @media (min-width: @desktop) {
   .contacts {
-    padding: 173px 0 190px 175px;
+    margin: 0 auto;
+    padding: 173px 0 190px 125px;
     display: flex;
+
+    &__container {
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
 
     &__body {
       flex-direction: column;

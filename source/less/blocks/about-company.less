@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 35px 0 57px 0;
   background-color: @white;
+  box-sizing: border-box;
 
   &__list {
     list-style: none;
@@ -100,11 +101,17 @@
 
 @media (min-width: @desktop) {
   .about-company {
-    padding: 90px 175px 86px 175px;
-    box-sizing: border-box;
+    padding: 0;
+
+    &__container {
+      padding: 90px 80px 90px 80px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
 
     &__item {
       padding-top: 108px;
+      width: 325px;
     }
   }
 }
