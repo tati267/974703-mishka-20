@@ -11,8 +11,7 @@ const sync = require("browser-sync").create();
 
 // Styles
 const styles = () => {
-  return gulp
-    .src("source/less/style.less")
+  return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
@@ -26,8 +25,10 @@ const styles = () => {
 
 exports.styles = styles;
 
+//Html
 const html = () => {
-  return gulp.src("source/*.html").pipe(gulp.dest("build"));
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
 };
 
 exports.html = html;
@@ -36,7 +37,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
@@ -82,3 +83,6 @@ const copy = () => {
 exports.copy = copy;
 
 exports.build = gulp.series(clean, copy, styles, html);
+
+//start
+exports.start = gulp.series(clean, copy, styles, html, server, watcher);
