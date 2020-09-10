@@ -8,11 +8,10 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 20px;
   outline: none;
   cursor: pointer;
   width: 100%;
-  padding: 14px 0;
+  padding: 12px 0;
 
   &:hover {
     color: @white;
@@ -81,10 +80,8 @@
     }
   }
 
-  &--link {
+  &--review {
     display: inline-block;
-    width: 99%;
-    padding: 14px 0;
   }
 
   &--products {
@@ -113,7 +110,8 @@
     line-height: 16px;
   }
 
-  &--prev {
+  &--prev,
+  &--next {
     width: 130px;
     height: 52px;
     border: 1px solid @grey-regular;
@@ -143,31 +141,8 @@
   }
 
   &--next {
-    width: 130px;
-    height: 52px;
-    border: 1px solid @grey-regular;
-    position: relative;
-
-    &:hover {
-      background: transparent;
-      opacity: 0.6;
-    }
-
-    &:active {
-      background: transparent;
-      opacity: 0.3;
-    }
-
     &::before {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 37px;
-      width: 50px;
-      height: 26px;
       background-image: url("../img/icon-right-arrow.svg");
-      background-repeat: repeat;
-      background-position: 0 0;
     }
   }
 
@@ -180,13 +155,13 @@
   &--basket-form {
     margin-top: 30px;
     padding: 18px 30px;
-    color: #ffffff;
-    background-color: #63d1bb;
+    color: @white;
+    background-color: @green-light;
     border: none;
 
     &:hover,
     &:focus {
-      background-color: #46c1ae;
+      background-color: @green-regular;
     }
 
     &:active {
@@ -203,22 +178,12 @@
       display: none;
     }
 
-    &--prev {
-      width: 87px;
-      height: 52px;
-      border: none;
-
-
-      &::before {
-        top: 12px;
-        left: 17px;
-      }
-    }
-
+    &--prev,
     &--next {
       width: 87px;
       height: 52px;
       border: none;
+
 
       &::before {
         top: 12px;
@@ -228,7 +193,7 @@
 
     &--review {
       position: absolute;
-      top: 81px;
+      top: 80px;
       right: 50px;
       width: 171px;
     }
@@ -270,7 +235,7 @@
   .button {
     &--contacts {
       position: absolute;
-      left: 225px;
+      left: 175px;
       bottom: 105px;
       margin: 0;
       padding: 16px 27px;
@@ -278,6 +243,7 @@
     }
 
     &--review {
+      top: 81px;
       right: 50px;
     }
   }

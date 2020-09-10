@@ -1,16 +1,15 @@
 .video {
-  margin: 32px 30px 58px 30px;
+  margin: 30px 30px 58px 30px;
   padding-top: 20px;
   border: 1px solid @grey-regular;
   box-sizing: border-box;
+  line-height: 24px;
+  color: @grey-dark;
 
   &__title {
+    font-size: 17px;
     padding-left: 90px;
     padding-bottom: 27px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
     color: @black;
     position: relative;
 
@@ -60,15 +59,13 @@
 
   &__block {
     margin: 34px;
-    margin-top: 30px;
+    margin-top: 28px;
   }
 
   &__description {
     margin-right: -34px;
     font-weight: normal;
     font-size: 13px;
-    line-height: 24px;
-    color: @grey-dark;
     padding-bottom: 41px;
   }
 }
@@ -81,14 +78,12 @@
     flex-direction: column;
 
     &__title {
-      padding-top: 41px;
-      padding-left: 105px;
-      padding-bottom: 22px;
+      padding: 41px 0 23px 105px;
       font-size: 20px;
       order: 2;
 
       &::before {
-        top: 35px;
+        top: 37px;
         left: 40px;
       }
     }
@@ -147,8 +142,6 @@
     &__title {
       position: absolute;
       padding: 0;
-      font-size: 20px;
-      line-height: 24px;
       top: 96px;
       right: 110px;
       width: 179px;
