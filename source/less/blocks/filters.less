@@ -229,10 +229,6 @@
     }
   }
 
-  &__form-end {
-    margin: 0 30px;
-  }
-
   &__important {
     margin-bottom: 30px;
     font-style: normal;
@@ -407,16 +403,6 @@
       }
     }
 
-    &__textarea {
-      height: 142px;
-      padding: 15px 0;
-      margin-bottom: 0;
-
-      &::placeholder {
-        padding: 0;
-      }
-    }
-
     &__phone {
       padding: 48px 0 24px 0;
     }
@@ -434,10 +420,20 @@
       }
     }
 
+    &__textarea {
+      height: 142px;
+      padding: 15px 0;
+      padding-left: 15px;
+      margin-bottom: 0;
+
+      &::placeholder {
+        padding: 0;
+      }
+    }
+
     &__form-end {
       display: flex;
       margin: 0;
-      padding: 0 50px;
     }
 
     &__important {
@@ -543,14 +539,8 @@
       min-height: 190px;
     }
 
-    &__textarea {
-      &::placeholder {
-        padding-left: 15px;
-      }
-    }
-
     &__form-end {
-      padding: 0 225px;
+      padding: 0 175px;
     }
   }
 }
