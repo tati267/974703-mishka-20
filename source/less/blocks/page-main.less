@@ -2,20 +2,104 @@
   color: @black;
   background-color: @white;
 
-  &__contacts,
-  &__about {
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-size: 320px 7px;
+  &__goods {
+    padding-top: 32px;
+    padding-bottom: 34px;
+  }
+
+  &__about-company {
+    padding-top: 38px;
+    padding-bottom: 58px;
+  }
+
+  &__reviews {
+    padding-bottom: 45px;
+  }
+
+  &__contacts {
+    padding-top: 44px;
+    padding-bottom: 40px;
+  }
+
+  &__about-company,
+  &__contacts {
+    .container {
+      position: relative;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -38px;
+      left: 0;
+      width: 320px;
+      height: 7px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: 320px 7px;
+    }
+  }
+
+  &__contacts {
+    .container::before {
+      top: -46px;
+    }
+  }
+
+  &__video {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 58px;
   }
 }
 
 @media (min-width: @tablet) {
   .page-main {
-    &__contacts,
-    &__about {
-      background-size: 772px 17px;
+    &__goods {
+      padding-top: 51px;
+      padding-bottom: 52px;
+    }
+
+    &__about-company {
+      padding-top: 73px;
+      padding-bottom: 82px;
+    }
+
+    &__reviews {
+      padding-top: 84px;
+      padding-bottom: 71px;
+    }
+
+    &__contacts {
+      padding-top: 83px;
+      padding-bottom: 52px;
+    }
+
+    &__products {
+      padding-top: 24px;
+      padding-bottom: 53px;
+    }
+
+    &__video {
+      margin-top: 0px;
+      margin-bottom: 64px;
+    }
+
+    &__about-company,
+    &__contacts {
+      .container::before {
+        top: -70px;
+        left: 0;
+        width: 772px;
+        height: 17px;
+        background-size: 772px 17px;
+      }
+    }
+
+    &__contacts {
+      .container::before {
+        top: -85px;
+      }
     }
 
     &__goods,
@@ -41,15 +125,51 @@
 
 @media (min-width: @desktop) {
   .page-main {
-    &__contacts,
-    &__about {
-      background-size: 1050px 23px;
-      width: 1050px;
-      margin: 0 auto;
+    &__goods {
+      padding-top: 132px;
+      padding-bottom: 74px;
+    }
+
+    &__about-company {
+      padding-top: 90px;
+      padding-bottom: 94px;
     }
 
     &__reviews {
-      margin: 0 auto;
+      padding-top: 80px;
+      padding-bottom: 118px;
+    }
+
+    &__contacts {
+      padding-top: 173px;
+      padding-bottom: 190px;
+    }
+
+    &__products {
+      padding-top: 130px;
+      padding-bottom: 37px;
+    }
+
+    &__video {
+      margin-bottom: 105px;
+    }
+
+    &__about-company,
+    &__contacts {
+      .container::before {
+        left: 50px;
+        top: -90px;
+        width: 1050px;
+        height: 23px;
+        background-size: 1050px 23px;
+      }
+    }
+
+    &__contacts {
+      .container::before {
+        left: -125px;
+        top: -170px;
+      }
     }
 
     &__goods,

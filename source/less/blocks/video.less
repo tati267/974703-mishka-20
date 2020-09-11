@@ -1,5 +1,4 @@
 .video {
-  margin: 30px 30px 58px 30px;
   padding-top: 20px;
   border: 1px solid @grey-regular;
   box-sizing: border-box;
@@ -31,7 +30,7 @@
     height: 150px;
   }
 
-  &__wrapper {
+  &__img-wrapper {
     position: relative;
 
     &::before {
@@ -57,7 +56,7 @@
     }
   }
 
-  &__block {
+  &__info {
     margin: 34px;
     margin-top: 28px;
   }
@@ -72,7 +71,6 @@
 
 @media (min-width: @tablet) {
   .video {
-    margin: 0 50px 64px 50px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -94,7 +92,7 @@
       order: 1;
     }
 
-    &__wrapper {
+    &__img-wrapper {
       height: 455px;
       position: relative;
 
@@ -121,7 +119,7 @@
       }
     }
 
-    &__block {
+    &__info {
       margin: 0 40px 46px 40px;
       order: 3;
     }
@@ -135,7 +133,7 @@
 
 @media (min-width: @desktop) {
   .video {
-    margin: 0 50px 105px 50px;
+    margin-bottom : 105px;
     flex-direction: row;
     position: relative;
 
@@ -158,7 +156,7 @@
       order: 1;
     }
 
-    &__block {
+    &__info {
       max-width: 231px;
       margin: 0;
       margin-top: 170px;

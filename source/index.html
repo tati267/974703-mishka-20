@@ -21,8 +21,9 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo logo" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </picture>
-          <button class="button--burger button--close js-burger" type="button"><span class="visually-hidden">Открыть
-              меню</span></button>
+          <button class="button button--burger button--close js-burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </li>
         <li class="navigation__item navigation__item--catalog">
           <a class="navigation__link" href="catalog.html">Каталог товаров</a>
@@ -39,7 +40,8 @@
                 <path fill="#cccccc"
                   d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
               </svg>
-            </span>Поиск по сайту</button>
+            </span>Поиск по сайту
+          </button>
         </li>
         <li class="navigation__item navigation__item--basket">
           <a class="navigation__link js-basket" href="#">
@@ -50,7 +52,8 @@
                 <path fill="#cccccc"
                   d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
               </svg>
-            </span>Корзина: пока пуста</a>
+            </span>Корзина: пока пуста
+          </a>
         </li>
         <li class="navigation__item navigation__item--new-products">
           <a class="navigation__link" href="#">Новые поступления</a>
@@ -74,7 +77,7 @@
 
     <section class="page-main__goods">
       <div class="container">
-        <div class="wrapper goods">
+        <div class="goods">
           <h2 class="title title--goods">Вязаные корзинки</h2>
           <span class="goods__text">Товар недели</span>
           <div class="goods__item">
@@ -120,94 +123,85 @@
       </div>
     </section>
 
-    <section class="page-main__about about-company">
+    <section class="page-main__about-company">
       <div class="container">
-        <div class="about-company__container">
-          <div class="wrapper">
-            <h2 class="title">Коротко о нас:</h2>
-            <ul class="about-company__list">
-              <li class="about-company__item">Экологически чистые материалы</li>
-              <li class="about-company__item">Скандинавский стиль по российской цене</li>
-              <li class="about-company__item">Увеличивает лайки на фотографиях</li>
-              <li class="about-company__item">Связано вручную с любовью и умилением</li>
-              <li class="about-company__item">Поддержка отечественного производителя</li>
-              <li class="about-company__item">Поставляется в подарочной упаковке</li>
-            </ul>
-          </div>
+        <div class="about-company">
+          <h2 class="title">Коротко о нас:</h2>
+          <ul class="about-company__list">
+            <li class="about-company__item">Экологически чистые материалы</li>
+            <li class="about-company__item">Скандинавский стиль по российской цене</li>
+            <li class="about-company__item">Увеличивает лайки на фотографиях</li>
+            <li class="about-company__item">Связано вручную с любовью и умилением</li>
+            <li class="about-company__item">Поддержка отечественного производителя</li>
+            <li class="about-company__item">Поставляется в подарочной упаковке</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <article class="page-main__reviews container reviews">
-      <div class="reviews__wrapper">
-        <h2 class="title">Отзывы</h2>
-        <div class="reviews__list">
-          <blockquote class="reviews__item">
-            <p class="reviews__text" id="reviewsText">Я молодая мама, но все равно фотографии не набирали и близко
-              такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
-              Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author" id="reviewsAuthor">Анастасия Красильникова</cite>
-            <cite class="reviews__nickname" id="reviewsNickname">@misssssiskras</cite>
-          </blockquote>
-          <div class="reviews__buttons">
-            <button class="button button--prev" type="button">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </button>
-            <button class="button button--next" type="button">
-              <span class="visually-hidden">Следующий отзыв</span>
-            </button>
-          </div>
+    <article class="page-main__reviews reviews container">
+      <h2 class="title">Отзывы</h2>
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
+          <p class="reviews__text" id="reviewsText">Я молодая мама, но все равно фотографии не набирали и близко
+            такого
+            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
+            Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author" id="reviewsAuthor">Анастасия Красильникова</cite>
+          <cite class="reviews__nickname" id="reviewsNickname">@misssssiskras</cite>
+        </blockquote>
+        <div class="reviews__buttons">
+          <button class="button button--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="button button--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
         </div>
-        <a class="button button--review" href="form.html">Написать</a>
+        <a class="button button--review" href="#">Написать</a>
       </div>
     </article>
 
-    <section class="page-main__contacts">
-      <div class="contacts__container contacts">
-        <div class="container">
-          <div class="wrapper">
-            <h2 class="title title--contacts">Контакты</h2>
-            <div class="contacts__body">
-              <div class="contacts__row">
-                <span class="contacts__first-column">e-mail:</span>
-                <p class="contacts__second-column">
-                  <a class="contacts__email">info@mimimishkashop.ru</a>
-                </p>
-              </div>
-              <div class="contacts__row">
-                <span class="contacts__first-column">aдрес:</span>
-                <p class="contacts__second-column">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
-              </div>
-            </div>
+    <section class="page-main__contacts contacts">
+      <div class="container">
+        <h2 class="title title--contacts">Контакты</h2>
+        <div class="contacts__body">
+          <div class="contacts__row">
+            <span class="contacts__first-column">e-mail:</span>
+            <p class="contacts__second-column">
+              <a class="contacts__email">info@mimimishkashop.ru</a>
+            </p>
           </div>
-        </div>
-
-        <div class="map">
-          <div class="map__api" id="google-map" tabindex="-2"></div>
-          <div class="map__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-              <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
-            </picture>
+          <div class="contacts__row">
+            <span class="contacts__first-column">aдрес:</span>
+            <p class="contacts__second-column">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
           </div>
-        </div>
-
-        <div class="container">
-          <button class="button button--contacts" type="button">Напишите нам</button>
         </div>
       </div>
+
+      <div class="map">
+        <div class="map__api" id="google-map"></div>
+        <div class="map__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+            <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
+        </div>
+      </div>
+
+      <button class="button button--contacts" type="button">Напишите нам</button>
+
     </section>
   </main>
 
   <footer class="page__footer">
     <div class="container">
-      <div class="wrapper page-footer">
+      <div class="page-footer">
         <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34"
             alt="Логотип Mishka"></a>
         <div class="page-footer__social social">
@@ -277,7 +271,7 @@
 
   <div class="overlay"></div>
   <section class="modal">
-    <h1 class="title title--modal">Добавить в корзину</h1>
+    <h3 class="title title--modal">Добавить в корзину</h3>
     <p class="modal__text">Выберите размер:</p>
     <form class="modal__form basket-form" action="#">
       <input class="visually-hidden basket-form__radio-size" type="radio" name="size" id="size-S" value="S">
@@ -293,8 +287,7 @@
     </form>
   </section>
 
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv3Mue0MjRxWehq81r_XyQS8Lnr-iQ-VQ&callback"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv3Mue0MjRxWehq81r_XyQS8Lnr-iQ-VQ&callback"></script>
   <script src="js/scripts.js"></script>
 </body>
 
