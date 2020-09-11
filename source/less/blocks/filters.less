@@ -6,13 +6,46 @@
 
   &__text {
     padding-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
     font-size: 13px;
     line-height: 24px;
     color: @grey-dark;
   }
 
+  &__list {
+    list-style: none;
+    padding-bottom: 43px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--name {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__type,
+  &__color,
+  &__name,
+  &__phone,
+  &__email,
+  &__add {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__type {
+    min-height: 170px;
+  }
+
+  &__color {
+    min-height: 420px;
+  }
+
   &__title {
-    font-weight: bold;
+    padding-bottom: 36px;
     font-size: 17px;
     line-height: 16px;
     color: @green-light;
@@ -30,6 +63,10 @@
       background-color: #63d1bb;
     }
 
+    &--name {
+      padding-bottom: 27px;
+    }
+
     &--phone,
     &--email {
       padding-bottom: 3px;
@@ -40,30 +77,8 @@
     }
   }
 
-  &__list {
-    padding-top: 30px;
-    padding-bottom: 32px;
-    list-style: none;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &--type {
-      min-height: 156px;
-    }
-
-    &--color {
-      padding-top: 24px;
-      min-height: 400px;
-    }
-
-    &--name {
-      padding-bottom: 15px;
-    }
-  }
-
   &__item {
+    font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -71,27 +86,20 @@
   }
 
   &__label {
-    padding: 6px 0 3px 60px;
-    min-height: 40px;
-    box-sizing: border-box;
-    vertical-align: middle;
+    padding-left: 60px;
     position: relative;
     display: inline-block;
     cursor: pointer;
     user-select: none;
-
-    &--color {
-      padding-top: 10px;
-    }
   }
 
   &__input--radio + &__label::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: -10px;
     left: 1px;
-    width: 35px;
-    height: 35px;
+    width: 34px;
+    height: 34px;
     border: 2px solid #444444;
     border-radius: 50%;
   }
@@ -99,7 +107,7 @@
   &__input--radio:checked + &__label::after {
     content: "";
     position: absolute;
-    top: 11px;
+    top: 2px;
     left: 13px;
     width: 15px;
     height: 15px;
@@ -111,7 +119,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: -12px;
     width: 34px;
     height: 35px;
     border: 2px solid #444444;
@@ -120,7 +128,6 @@
   &__input--checkbox:checked + &__label::after {
     content: "";
     position: absolute;
-    top: 9px;
     left: 8px;
     width: 21px;
     height: 16px;
@@ -144,6 +151,7 @@
     margin-bottom: 21px;
     padding: 14px 0;
     width: 100%;
+    font-weight: normal;
     font-size: 19px;
     line-height: 18px;
     box-sizing: border-box;
@@ -220,8 +228,14 @@
     }
   }
 
+  &__form-end {
+    margin: 0 30px;
+  }
+
   &__important {
     margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: @grey-dark;
@@ -245,7 +259,6 @@
 
     &__list {
       padding: 0;
-      flex-grow: 2;
       flex-direction: row;
       flex-wrap: wrap;
 
@@ -422,6 +435,8 @@
 
     &__form-end {
       display: flex;
+      margin: 0;
+      padding: 0 50px;
     }
 
     &__important {
@@ -534,7 +549,7 @@
     }
 
     &__form-end {
-      padding: 0 176px;
+      padding: 0 225px;
     }
   }
 }
