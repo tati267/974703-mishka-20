@@ -61,7 +61,7 @@
       width: 100px;
       height: 1px;
       margin-left: 20px;
-      background-color: #63d1bb;
+      background-color: @green-light;
     }
 
     &--name {
@@ -101,7 +101,7 @@
     left: 1px;
     width: 34px;
     height: 34px;
-    border: 2px solid #444444;
+    border: 2px solid @grey-dark;
     border-radius: 50%;
   }
 
@@ -112,7 +112,7 @@
     left: 13px;
     width: 15px;
     height: 15px;
-    background-color: #63d1bb;
+    background-color: @green-light;
     border-radius: 50%;
   }
 
@@ -123,7 +123,7 @@
     top: -12px;
     width: 34px;
     height: 35px;
-    border: 2px solid #444444;
+    border: 2px solid @grey-dark;
   }
 
   &__input--checkbox:checked + &__label::after {
@@ -138,8 +138,10 @@
   }
 
   &__input--radio:hover + &__label:hover::before,
-  &__input--checkbox:hover + &__label:hover::before {
-    border-color: #62d1ba;
+  &__input--checkbox:hover + &__label:hover::before,
+  &__input--radio:focus + &__label::before,
+  &__input--checkbox:focus + &__label::before {
+    border-color: @green-light;
   }
 
   &__input--radio:active + &__label:active::before,
@@ -169,16 +171,19 @@
     }
 
     &:hover,
+    &:focus,
     &:active {
-      border-color: #62d1ba;
+      border-color: @green-light;
     }
   }
 
   &__input--phone:hover + &__phone-img path,
+  &__input--phone:focus + &__phone-img path,
   &__input--phone:active + &__phone-img path,
   &__input--email:hover + &__email-img path,
-  &__input--email:focus + &__email-img path {
-    fill: #63d1ba;
+  &__input--email:focus + &__email-img path,
+  &__input--email:active + &__email-img path {
+    fill: @green-light;
   }
 
   &__phone,
@@ -201,19 +206,31 @@
   &__phone-img,
   &__email-img {
     &:hover path,
+    &:focus path,
     &:active path {
       fill: @green-light;
     }
   }
 
   &__textarea {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
     margin-bottom: 16px;
     padding: 17px;
     width: 100%;
     min-height: 142px;
     box-sizing: border-box;
-    border: 2px solid #444444;
+    border: 2px solid @grey-dark;
     outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: @green-light;
+    }
   }
 
   &__input,
@@ -245,7 +262,7 @@
 
     &__color-fill {
       width: 100%;
-      background-color: #f1f1f1;
+      background-color: @grey-light;
     }
 
     &__text {
@@ -322,7 +339,7 @@
     }
 
     &__color {
-      background-color: #f1f1f1;
+      background-color: @grey-light;
     }
 
     &__type {
@@ -336,7 +353,7 @@
 
     &__phone,
     &__email {
-      background-color: #f1f1f1;
+      background-color: @grey-light;
     }
 
     &__phone-img {
@@ -397,7 +414,7 @@
 
       &--phone,
       &--email {
-        background-color: #f1f1f1;
+        background-color: @grey-light;
         height: 52px;
         padding-right: 60px;
       }

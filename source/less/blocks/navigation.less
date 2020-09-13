@@ -40,11 +40,13 @@
 
   &__link,
   &__button-search {
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 
-    &:hover path {
+    &:hover path,
+    &:focus path {
       fill: @green-light;
     }
 

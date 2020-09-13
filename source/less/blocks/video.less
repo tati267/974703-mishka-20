@@ -31,6 +31,7 @@
   }
 
   &__img-wrapper {
+    background-color: @grey-light;
     position: relative;
 
     &::before {
@@ -46,7 +47,8 @@
       order: -1;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       transform: scale(1.2, 1.2);
     }
 
@@ -109,7 +111,8 @@
         order: -1;
       }
 
-      &:hover::before {
+      &:hover::before,
+      &:focus::before {
         transform: scale(1.2, 1.2);
       }
 

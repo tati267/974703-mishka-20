@@ -11,6 +11,7 @@
   }
 
   &__link-img {
+    background-color: @grey-light;
     display: flex;
     height: 195px;
   }
@@ -28,7 +29,8 @@
     box-sizing: border-box;
     position: relative;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -41,7 +43,8 @@
     color: @black;
     font-size: 17px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 

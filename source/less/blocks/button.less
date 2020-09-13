@@ -8,18 +8,18 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  outline: none;
   cursor: pointer;
   width: 100%;
   padding: 12px 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: @white;
-    background: @grey-dark;
+    background-color: @grey-dark;
   }
 
   &:active {
-    background: @grey-dark;
+    background-color: @grey-dark;
     opacity: 0.3;
   }
 
@@ -28,7 +28,7 @@
     height: 14px;
     outline: none;
     cursor: pointer;
-    background-color: @white;
+    background-color: transparent;
     position: absolute;
     top: 25px;
     right: 41px;
@@ -49,6 +49,12 @@
       background-image: url("../img/icon-menu-open.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
     }
   }
 
@@ -89,6 +95,7 @@
   }
 
   &--products {
+    background-color: @white;
     width: 20px;
     height: 19px;
     outline: none;
@@ -98,6 +105,12 @@
     bottom: 38px;
     right: 25px;
     border: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @white;
+    }
   }
 
   &--video {
@@ -133,7 +146,8 @@
       background-position: 0 0;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: transparent;
       opacity: 0.6;
     }
@@ -213,11 +227,13 @@
     &--products {
       right: 32px;
 
-      &:hover {
+      &:hover,
+      &:focus {
         opacity: 0.6;
       }
 
-      &:hover path {
+      &:hover path,
+      &:focus path {
         fill: @green-light;
       }
 
