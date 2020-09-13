@@ -8,6 +8,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
 
 // Styles
 const styles = () => {
@@ -32,6 +33,16 @@ const html = () => {
 };
 
 exports.html = html;
+
+// Sprite
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
 
 // Server
 const server = (done) => {

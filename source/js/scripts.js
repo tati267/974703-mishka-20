@@ -50,8 +50,7 @@ if (document.querySelector(".map")) {
     var coordinates = { lat: 59.9389, lng: 30.3231 };
     var map = new google.maps.Map(document.getElementById("google-map"), {
       zoom: 17,
-      center: coordinates,
-      background: fef8f1
+      center: coordinates
     });
     var marker = new google.maps.Marker({
       position: coordinates,
