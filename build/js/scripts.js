@@ -1,5 +1,7 @@
 //Navigation
-var navItems = document.querySelectorAll(".navigation__item:not(:first-of-type)");
+var navItems = document.querySelectorAll(
+  ".navigation__item:not(:first-of-type)"
+);
 var burgerBtn = document.querySelector(".js-burger");
 
 burgerBtn.classList.add("button--show");
@@ -8,7 +10,7 @@ burgerBtn.addEventListener("click", function () {
 
   navItems.forEach(function (item) {
     item.classList.toggle("navigation__item--off");
-  })
+  });
 });
 
 //Modal
@@ -25,7 +27,7 @@ if (buttonOrder) {
   });
 
   if (overlay) {
-    overlay.addEventListener('click', () => {
+    overlay.addEventListener("click", () => {
       overlay.classList.remove("overlay--on");
       modal.classList.remove("modal--on");
     });
@@ -50,7 +52,7 @@ if (document.querySelector(".map")) {
     var coordinates = { lat: 59.9389, lng: 30.3231 };
     var map = new google.maps.Map(document.getElementById("google-map"), {
       zoom: 17,
-      center: coordinates
+      center: coordinates,
     });
     var marker = new google.maps.Marker({
       position: coordinates,
@@ -59,8 +61,8 @@ if (document.querySelector(".map")) {
       animation: google.maps.Animation.DROP,
       icon: {
         url: "./img/icon-map-pin.svg",
-        scaledSize: new google.maps.Size(67, 100)
-      }
+        scaledSize: new google.maps.Size(67, 100),
+      },
     });
   }
 
@@ -72,30 +74,26 @@ if (document.querySelector(".map")) {
   window.addEventListener("load", initMap);
 }
 
-
 // Reviews
 var reviews = [
   {
     id: 1,
-    text:
-      "Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!",
-    author: "Анастасия Красильникова",
+    text: "What a great basket to store our daughter’s toys! I love the shape and size(we ordered the largest size), and you can see that the basket is really well made. By choosing a more neutral color we’ll also be able to use the basket in the future in all kinds of spaces.Really happy with our purchase!",
+    author: "Anna Barns",
     nickname: "@misssssiskras",
   },
   {
     id: 2,
-    text:
-      "Выбор в магазине очень и очень большой, на многие товары есть приличные скидки. От курьерской доставки я отказался, нашел магазин недалеко от меня. Приехал на следующий день и спокойно оплатив заказ на месте забрал его.",
-    author: "Сэм",
-    nickname: "@kras",
+    text: "Extremely well made and just what I wanted!! I purchased two of the largest sized poufs and could not be happier! The seller was very easy to communicate with and extremely accommodating. If you are on the fence about purchasing these, DO IT!! You won’t be sorry! I’ve had them and have been using them daily for a foot rest/extra seating in my living room and they are just perfect!!",
+    author: "Lori Czerenda",
+    nickname: "@lori",
   },
   {
     id: 3,
-    text:
-      "В основном детские товары я всегда заказываю в интернет-магазинах, так как не хочу тратить время на поход по магазинам. Цены на интересующие меня товары оказались выгодными. Магазин мне очень понравился, я довольна!",
-    author: "Лена",
-    nickname: "@missss",
-  }
+    text: "Item is absolutely gorgeous and really good quality, considering Covid shipping was pretty good, I had it custom made in the colour I wanted and seller was always responsive any time I had a question, I would highly recommend seller and product. I bought this as storage for my cats toys ",
+    author: "Jackie Host",
+    nickname: "@jackie",
+  },
 ];
 
 var text = document.getElementById("reviewsText");
@@ -103,7 +101,6 @@ var author = document.getElementById("reviewsAuthor");
 var nickname = document.getElementById("reviewsNickname");
 var buttonPrev = document.querySelector(".button--prev");
 var buttonNext = document.querySelector(".button--next");
-
 
 // set starting item
 let currentItem = 0;

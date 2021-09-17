@@ -9,14 +9,18 @@
   &__item {
     padding: 0 20px;
   }
+}
 
-  &__link {
-    &:hover path,
-    &:focus path {
+.social__link {
+  &:hover,
+  &:focus {
+    svg {
       fill: @green-regular;
     }
+  }
 
-    &:active path {
+  &:active {
+    svg {
       fill: @green-regular;
       opacity: 0.3;
     }
